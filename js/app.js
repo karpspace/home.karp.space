@@ -13,5 +13,5 @@ $(document).ready(function(){
 		$("."+name+"Orbit").removeClass("orbitHover");
 	})
 
-
+$(document).foundation();
 });

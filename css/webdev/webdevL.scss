@@ -1,4 +1,4 @@
-$centerX:690px;
+$centerX:720px;
 $centerY:410px;
 
 $webDevFontSize: 50px;
@@ -36,7 +36,7 @@ $webDevFontSize: 50px;
  $phpTime:  200s;
  $pythonTime:  200s;
  $magentoTime:  200s;
- $otherTime:  30s;
+ $otherTime:  200s;
 
 
 
@@ -44,6 +44,7 @@ $webDevFontSize: 50px;
     cursor: pointer;
     &:hover{
         color:$blue;
+
     }
 }
 
@@ -68,7 +69,7 @@ $webDevFontSize: 50px;
     height: 250px;
     position: absolute;
     top: 348px;
-    left: 616px;
+    left: 646px;
     border: 2px solid $darkGray;
     border-radius: 130px;
 }
@@ -76,7 +77,7 @@ $webDevFontSize: 50px;
 .python{  
     font-family: $quicksand;
     position: absolute;
-    left: 702px;
+    left: 732px;
     text-transform: uppercase;
     top: 460px;
     background-color: $lightGray;
@@ -92,7 +93,7 @@ $webDevFontSize: 50px;
     height: 480px;
     position: absolute;
     top: 235px;
-    left: 503px;
+    left: 533px;
     border: 2px solid $darkGray;
     border-radius: 753px;
 }
@@ -116,10 +117,42 @@ $webDevFontSize: 50px;
     height: 650px;
     position: absolute;
     top: 149px;
-    left: 418px;
+    left: 448px;
     border: 2px solid $darkGray;
     border-radius: 753px;
 }
+
+.other{  
+    background-color: $lightGray;
+    font-size: 4vh;
+    position: absolute; 
+    left: $centerX - 20px; 
+    font-family: $quicksand;
+    text-transform: uppercase;
+    top: $centerY + $webDevFontSize;
+    -webkit-animation: otherOrbit $otherTime linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: otherOrbit $otherTime linear infinite; /* Firefox 5-15 */
+         -o-animation: otherOrbit $otherTime linear infinite; /* Opera 12+ */
+            animation: otherOrbit $otherTime linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */  
+}
+
+.otherOrbit{
+  width: 880px;
+    height: 880px;
+    position: absolute;
+    top: 35px;
+    left: 340px;
+    border: 2px solid #414042;
+    border-radius: 753px;
+}
+
+
+.orbitHover{
+    border: 2px dotted $blue !important;
+}
+
+
 
 
 $rf1:0deg;
@@ -146,11 +179,11 @@ $magentotxt:330px;
 $magentort2:-270deg;
 
 $otherrf1:-270deg;
-$othertxf:3260px;
+$othertxf:430px;
 $otherrf2:270deg;
 
 $otherrt1:90deg;
-$othertxt:260px;
+$othertxt:430px;
 $otherrt2:-90deg;
 
 @-webkit-keyframes phpOrbit {
@@ -251,36 +284,3 @@ $otherrt2:-90deg;
     to   { transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
 }
 
-.other{  
-    font-size: 4vh;
-    position: absolute; 
-    left: $centerX ; 
-    font-family: $quicksand;
-    text-transform: uppercase;
-    top: $centerY + $webDevFontSize;
-    -webkit-animation: otherOrbit $otherTime linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: otherOrbit $otherTime linear infinite; /* Firefox 5-15 */
-         -o-animation: otherOrbit $otherTime linear infinite; /* Opera 12+ */
-            animation: otherOrbit $otherTime linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */  
-}
-
-
-
-
-
-.sysmain{
-
-    position: relative;
-    margin-left: 100px;
-    .sysbox{
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        background-color: red;
-    }
-}
-
-.orbitHover{
-    border: 2px solid $blue !important;
-}
