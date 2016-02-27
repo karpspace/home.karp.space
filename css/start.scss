@@ -1,0 +1,34 @@
+.start{
+	background: $startBackground no-repeat center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 100vh;
+	
+	h1,h2{
+		color:$lightGray;
+		font-family: $mainFont;
+		
+	}
+
+
+
+	.nameStart{
+		background-color: $darkGray;
+	}
+
+	.nextBorder{
+		border-color: $lightGray;
+	}
+
+
+
+@import 'startLo';
+@import 'startM';
+@import 'startL';
+@import 'startXL';
+
+} 
+
+
