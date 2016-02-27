@@ -4,6 +4,43 @@
   border: 4px solid;
   border-radius: 100%; }
 
+nav {
+  width: 300px;
+  position: fixed;
+  right: 10px;
+  top: 350px;
+  z-index: 100; }
+  nav ul {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center; }
+    nav ul li {
+      list-style: none;
+      font-family: "Quicksand", Helvetica, Sans-Serif;
+      font-size: 20px;
+      cursor: pointer;
+      -webkit-transition: color 1.5s ease, font-size 1.5s ease;
+      -moz-transition: color 1.5s ease, font-size 1.5s ease;
+      -o-transition: color 1.5s ease, font-size 1.5s ease;
+      transition: color 1.5s ease, font-size 1.5s ease; }
+      nav ul li:hover {
+        color: #1c75bc;
+        font-weight: bold; }
+    nav ul .active {
+      font-size: 40px; }
+    nav ul .aroundActive {
+      font-size: 30px; }
+
+.light {
+  color: #bcbec0; }
+  .light:hover {
+    color: #414042; }
+
+.dark {
+  color: #414042; }
+  .dark:hover {
+    color: #F1F2F2; }
+
 .start {
   background: url(../img/startBack.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -67,9 +104,10 @@
     margin-bottom: -20px;
     color: #1c75bc; }
 
-.webdevLink {
-  cursor: pointer; }
-  .webdevLink:hover {
+.webdevLinkModal {
+  cursor: pointer;
+  color: #414042; }
+  .webdevLinkModal:hover {
     color: #1c75bc; }
 
 .php {
@@ -81,13 +119,13 @@
   font-family: "Quicksand", Helvetica, Sans-Serif;
   text-transform: uppercase;
   top: 447px;
-  -webkit-animation: phpOrbit 200s linear infinite;
+  -webkit-animation: phpOrbit 40s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: phpOrbit 200s linear infinite;
+  -moz-animation: phpOrbit 40s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: phpOrbit 200s linear infinite;
+  -o-animation: phpOrbit 40s linear infinite;
   /* Opera 12+ */
-  animation: phpOrbit 200s linear infinite;
+  animation: phpOrbit 40s linear infinite;
   /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */ }
 
 .phpOrbit {
@@ -96,34 +134,34 @@
   position: absolute;
   top: 348px;
   left: 646px;
-  border: 2px solid #414042;
+  border: 2px solid #bcbec0;
   border-radius: 130px; }
 
 .python {
   font-family: "Quicksand", Helvetica, Sans-Serif;
   position: absolute;
-  left: 732px;
+  left: 742px;
   text-transform: uppercase;
-  top: 460px;
+  top: 475px;
   background-color: #F1F2F2;
   font-size: 20px;
-  -webkit-animation: pythonOrbit 200s linear infinite;
+  -webkit-animation: pythonOrbit 40s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: pythonOrbit 200s linear infinite;
+  -moz-animation: pythonOrbit 40s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: pythonOrbit 200s linear infinite;
+  -o-animation: pythonOrbit 40s linear infinite;
   /* Opera 12+ */
-  animation: pythonOrbit 200s linear infinite;
+  animation: pythonOrbit 40s linear infinite;
           /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
 .pythonOrbit {
-  width: 480px;
-  height: 480px;
+  width: 440px;
+  height: 440px;
   position: absolute;
-  top: 235px;
-  left: 533px;
-  border: 2px solid #414042;
+  top: 252px;
+  left: 551px;
+  border: 2px solid #bcbec0;
   border-radius: 753px; }
 
 .magento {
@@ -133,14 +171,14 @@ IE 10+, Safari 5 */ }
   left: 720px;
   font-family: "Quicksand", Helvetica, Sans-Serif;
   text-transform: uppercase;
-  top: 460px;
-  -webkit-animation: magentoOrbit 200s linear infinite;
+  top: 465px;
+  -webkit-animation: magentoOrbit 40s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: magentoOrbit 200s linear infinite;
+  -moz-animation: magentoOrbit 40s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: magentoOrbit 200s linear infinite;
+  -o-animation: magentoOrbit 40s linear infinite;
   /* Opera 12+ */
-  animation: magentoOrbit 200s linear infinite;
+  animation: magentoOrbit 40s linear infinite;
             /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -148,26 +186,26 @@ IE 10+, Safari 5 */ }
   width: 650px;
   height: 650px;
   position: absolute;
-  top: 149px;
+  top: 144px;
   left: 448px;
-  border: 2px solid #414042;
+  border: 2px solid #bcbec0;
   border-radius: 753px; }
 
 .other {
   background-color: #F1F2F2;
-  font-size: 4vh;
+  font-size: 3vh;
   position: absolute;
-  left: 700px;
+  left: 713px;
   font-family: "Quicksand", Helvetica, Sans-Serif;
   text-transform: uppercase;
-  top: 460px;
-  -webkit-animation: otherOrbit 200s linear infinite;
+  top: 448px;
+  -webkit-animation: otherOrbit 10s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: otherOrbit 200s linear infinite;
+  -moz-animation: otherOrbit 10s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: otherOrbit 200s linear infinite;
+  -o-animation: otherOrbit 10s linear infinite;
   /* Opera 12+ */
-  animation: otherOrbit 200s linear infinite;
+  animation: otherOrbit 10s linear infinite;
         /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -175,9 +213,9 @@ IE 10+, Safari 5 */ }
   width: 880px;
   height: 880px;
   position: absolute;
-  top: 35px;
-  left: 340px;
-  border: 2px solid #414042;
+  top: 30px;
+  left: 337px;
+  border: 2px solid #bcbec0;
   border-radius: 753px; }
 
 .orbitHover {
@@ -205,24 +243,24 @@ IE 10+, Safari 5 */ }
     transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
 @-webkit-keyframes pythonOrbit {
   from {
-    -webkit-transform: rotate(-180deg) translateX(240px) rotate(180deg); }
+    -webkit-transform: rotate(-180deg) translateX(230px) rotate(180deg); }
   to {
-    -webkit-transform: rotate(180deg) translateX(240px) rotate(-180deg); } }
+    -webkit-transform: rotate(180deg) translateX(230px) rotate(-180deg); } }
 @-moz-keyframes pythonOrbit {
   from {
-    -moz-transform: rotate(-180deg) translateX(240px) rotate(180deg); }
+    -moz-transform: rotate(-180deg) translateX(230px) rotate(180deg); }
   to {
-    -moz-transform: rotate(180deg) translateX(240px) rotate(-180deg); } }
+    -moz-transform: rotate(180deg) translateX(230px) rotate(-180deg); } }
 @-o-keyframes pythonOrbit {
   from {
-    -o-transform: rotate(-180deg) translateX(240px) rotate(180deg); }
+    -o-transform: rotate(-180deg) translateX(230px) rotate(180deg); }
   to {
-    -o-transform: rotate(180deg) translateX(240px) rotate(-180deg); } }
+    -o-transform: rotate(180deg) translateX(230px) rotate(-180deg); } }
 @keyframes pythonOrbit {
   from {
-    transform: rotate(-180deg) translateX(240px) rotate(180deg); }
+    transform: rotate(-180deg) translateX(230px) rotate(180deg); }
   to {
-    transform: rotate(180deg) translateX(240px) rotate(-180deg); } }
+    transform: rotate(180deg) translateX(230px) rotate(-180deg); } }
 @-webkit-keyframes magentoOrbit {
   from {
     -webkit-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
@@ -245,24 +283,24 @@ IE 10+, Safari 5 */ }
     transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
 @-webkit-keyframes otherOrbit {
   from {
-    -webkit-transform: rotate(-270deg) translateX(430px) rotate(270deg); }
+    -webkit-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
   to {
-    -webkit-transform: rotate(90deg) translateX(430px) rotate(-90deg); } }
+    -webkit-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
 @-moz-keyframes otherOrbit {
   from {
-    -moz-transform: rotate(-270deg) translateX(430px) rotate(270deg); }
+    -moz-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
   to {
-    -moz-transform: rotate(90deg) translateX(430px) rotate(-90deg); } }
+    -moz-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
 @-o-keyframes otherOrbit {
   from {
-    -o-transform: rotate(-270deg) translateX(430px) rotate(270deg); }
+    -o-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
   to {
-    -o-transform: rotate(90deg) translateX(430px) rotate(-90deg); } }
+    -o-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
 @keyframes otherOrbit {
   from {
-    transform: rotate(-270deg) translateX(430px) rotate(270deg); }
+    transform: rotate(-270deg) translateX(435px) rotate(270deg); }
   to {
-    transform: rotate(90deg) translateX(430px) rotate(-90deg); } }
+    transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
 .sysadmin {
   background-color: #1c75bc;
   height: 100vh; }

@@ -20,7 +20,7 @@ $webDevFontSize: 50px;
         padding: 0;
         font-size: $webDevFontSize;
         margin-bottom: -20px;
-        color:$blue;
+        color:$blue;    
        
     }  
 
@@ -33,20 +33,25 @@ $webDevFontSize: 50px;
     */
 }
  
- $phpTime:  200s;
- $pythonTime:  200s;
- $magentoTime:  200s;
- $otherTime:  200s;
+ $phpTime:  40s;
+ $pythonTime:  40s;
+ $magentoTime:  40s;
+ $otherTime:  10s;
 
 
 
-.webdevLink{
+.webdevLinkModal{
     cursor: pointer;
+    
     &:hover{
         color:$blue;
 
     }
-}
+
+ 
+        color:$darkGray;
+  
+} 
 
 
 
@@ -70,16 +75,16 @@ $webDevFontSize: 50px;
     position: absolute;
     top: 348px;
     left: 646px;
-    border: 2px solid $darkGray;
+    border: 2px solid $mediumGray;
     border-radius: 130px;
 }
 
 .python{  
     font-family: $quicksand;
     position: absolute;
-    left: 732px;
+    left: 742px;
     text-transform: uppercase;
-    top: 460px;
+    top: 475px;
     background-color: $lightGray;
     font-size: 20px;
     -webkit-animation: pythonOrbit $pythonTime linear infinite; /* Chrome, Safari 5 */
@@ -89,12 +94,12 @@ $webDevFontSize: 50px;
                                                       IE 10+, Safari 5 */  
 }
 .pythonOrbit{
-  width: 480px;
-    height: 480px;
+    width: 440px;
+    height: 440px;
     position: absolute;
-    top: 235px;
-    left: 533px;
-    border: 2px solid $darkGray;
+    top: 252px;
+    left: 551px;
+    border: 2px solid $mediumGray;
     border-radius: 753px;
 }
 
@@ -105,7 +110,7 @@ $webDevFontSize: 50px;
     left: $centerX;
     font-family: $quicksand;
     text-transform: uppercase;
-    top: $centerY + $webDevFontSize;
+    top: $centerY + $webDevFontSize + 5px;
     -webkit-animation: magentoOrbit $magentoTime linear infinite; /* Chrome, Safari 5 */
        -moz-animation: magentoOrbit $magentoTime linear infinite; /* Firefox 5-15 */
          -o-animation: magentoOrbit $magentoTime linear infinite; /* Opera 12+ */
@@ -116,20 +121,20 @@ $webDevFontSize: 50px;
     width: 650px;
     height: 650px;
     position: absolute;
-    top: 149px;
+    top: 144px;
     left: 448px;
-    border: 2px solid $darkGray;
+    border: 2px solid $mediumGray;
     border-radius: 753px;
 }
 
 .other{  
     background-color: $lightGray;
-    font-size: 4vh;
+    font-size: 3vh;
     position: absolute; 
-    left: $centerX - 20px; 
+    left: $centerX - 7px; 
     font-family: $quicksand;
     text-transform: uppercase;
-    top: $centerY + $webDevFontSize;
+    top: $centerY + $webDevFontSize - 12px;
     -webkit-animation: otherOrbit $otherTime linear infinite; /* Chrome, Safari 5 */
        -moz-animation: otherOrbit $otherTime linear infinite; /* Firefox 5-15 */
          -o-animation: otherOrbit $otherTime linear infinite; /* Opera 12+ */
@@ -141,9 +146,10 @@ $webDevFontSize: 50px;
   width: 880px;
     height: 880px;
     position: absolute;
-    top: 35px;
-    left: 340px;
-    border: 2px solid #414042;
+    top: 30px;
+    left: 337px;
+  
+    border: 2px solid $mediumGray;
     border-radius: 753px;
 }
 
@@ -163,11 +169,11 @@ $txt:120px;
 $rt2:-360deg;
 
 $pythonrf1:-180deg;
-$pythontxf:240px;
+$pythontxf:230px;
 $pythonrf2:180deg;
 
 $pythonrt1:180deg;
-$pythontxt:240px;
+$pythontxt:230px;
 $pythonrt2:-180deg;
 
 $magentorf1:-90deg;
@@ -179,11 +185,11 @@ $magentotxt:330px;
 $magentort2:-270deg;
 
 $otherrf1:-270deg;
-$othertxf:430px;
+$othertxf:435px;
 $otherrf2:270deg;
 
 $otherrt1:90deg;
-$othertxt:430px;
+$othertxt:435px;
 $otherrt2:-90deg;
 
 @-webkit-keyframes phpOrbit {
