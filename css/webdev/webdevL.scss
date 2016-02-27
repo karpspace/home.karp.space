@@ -33,10 +33,10 @@ $webDevFontSize: 50px;
     */
 }
  
- $phpTime:  40s;
- $pythonTime:  40s;
- $magentoTime:  40s;
- $otherTime:  10s;
+ $phpTime:  80s;
+ $pythonTime:  80s; 
+ $magentoTime:  80s;
+ $otherTime:  80s;
 
 
 
@@ -45,6 +45,7 @@ $webDevFontSize: 50px;
     
     &:hover{
         color:$blue;
+        font-weight: bold;
 
     }
 
@@ -82,9 +83,9 @@ $webDevFontSize: 50px;
 .python{  
     font-family: $quicksand;
     position: absolute;
-    left: 742px;
+    left: 723px;
     text-transform: uppercase;
-    top: 475px;
+    top: 460px;
     background-color: $lightGray;
     font-size: 20px;
     -webkit-animation: pythonOrbit $pythonTime linear infinite; /* Chrome, Safari 5 */
@@ -110,7 +111,7 @@ $webDevFontSize: 50px;
     left: $centerX;
     font-family: $quicksand;
     text-transform: uppercase;
-    top: $centerY + $webDevFontSize + 5px;
+    top: $centerY + $webDevFontSize - 5px;
     -webkit-animation: magentoOrbit $magentoTime linear infinite; /* Chrome, Safari 5 */
        -moz-animation: magentoOrbit $magentoTime linear infinite; /* Firefox 5-15 */
          -o-animation: magentoOrbit $magentoTime linear infinite; /* Opera 12+ */
@@ -169,11 +170,11 @@ $txt:120px;
 $rt2:-360deg;
 
 $pythonrf1:-180deg;
-$pythontxf:230px;
+$pythontxf:225px;
 $pythonrf2:180deg;
 
 $pythonrt1:180deg;
-$pythontxt:230px;
+$pythontxt:225px;
 $pythonrt2:-180deg;
 
 $magentorf1:-90deg;

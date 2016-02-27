@@ -13,13 +13,9 @@ nav{
 		li{			
 			list-style: none;
 			font-family: $quicksand;
-			font-size: 20px;
+			font-size: 30px;
 			cursor: pointer;
-			&:hover{
-				color:$blue;
-				font-weight: bold;
-
-			}
+			
 
 
 	-webkit-transition: color 1.5s ease, font-size 1.5s ease;
@@ -28,26 +24,47 @@ nav{
 	transition: color 1.5s ease, font-size 1.5s ease;	
 		}
 
-		.active{
-			font-size: 40px;
+		.activeBlue{
+			color:$darkGray;
+			font-weight: bold;
 		}
 
-		.aroundActive{
-			font-size: 30px;
+		.activeDark{
+			color:$blue;
+			font-weight: bold;
 		}
+
+		.activeLight{
+			color:$lightGray;
+			font-weight: bold;
+		}
+
+
+		//.aroundActive{
+		//	font-size: 30px;
+		//}
 	}
 }
 
 
+.dark{	color:$darkGray;
+	&:hover{
+			font-weight: bold;
+	}
+	
+}
 .light{
-	color:$mediumGray;
+
+color:$mediumGrayPlus;
 	&:hover{
-		color:$darkGray;
+			font-weight: bold;
 	}
 }
-.dark{
-	color:$darkGray;
+
+.blue{
+	color:$lightGray;
 	&:hover{
-		color:$lightGray;
+			font-weight: bold;
 	}
+
 }

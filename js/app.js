@@ -1,46 +1,67 @@
+var orbitCheck = 0;
+
+
 function menuClick(page){
 	
 	$("nav").fadeIn();
 
-	if ( (page.attr("data-page") == "sysadmin") || (page.attr("data-page") == "exp") ) {
-		$("nav li").addClass("light", 1500, "linear");
-		$("nav li").removeClass("dark", 1500, "linear");
-	}else{
-		$("nav li").addClass("dark", 1500, "linear");
-		$("nav li").removeClass("white", 1500, "linear");
-	}
-
-
-
 	if(page.index("li") == -1){
- 		pIndex = 1
+ 		pIndex = 0
 	}else{
 		pIndex = page.index("li");
 	}
 
+	if ((page.attr("data-page") == "exp") || (page.attr("data-page") == "contact"))  {
+		$("nav li").addClass("light", 1500, "linear");
+		$("nav li").removeClass("dark blue activeLight activeBlue activeDark", 1500, "linear");
+		page.addClass("activeLight");
+	}else if(page.attr("data-page") == "sysadmin") {
+		$("nav li").addClass("blue", 1500, "linear");
+		$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
+		page.addClass("activeBlue");
+	}else{
+		$("nav li").addClass("dark", 1500, "linear");
+		$("nav li").removeClass("blue light activeLight activeBlue activeDark", 1500, "linear");
+		page.addClass("activeDark");
+	}
+
+
+
+	
+	/*
 	$("nav li").removeClass("active aroundActive");
 
-	$("nav li:nth-child(" + parseInt(pIndex+1).toString() + ")" ).addClass("active");
+	
 	$("nav li:nth-child(" + parseInt(pIndex).toString() + "),nav li:nth-child(" + parseInt(pIndex+2).toString() + ")" ).addClass("aroundActive");
-
+	*/
 }
 
 
 $(document).ready(function(){	
 
 
+	$(".webdevLinkModal").click(function(){
+		$("nav").fadeOut();
+	});
 
+	$(".close-button").click(function(){
+		$("nav").fadeIn();
+	});
 	$("nav ul li, .start i").click(function(){
 		link = $(this);
-	$(window).scrollTo("."+$(this).attr("data-page"),1500,{
-
-			 onAfter:function(){
-			 	 requestAnimationFrame(function() {
+		$(window).scrollTo("."+$(this).attr("data-page"),1500,
+		{
+			onAfter:function(){
+			 	requestAnimationFrame(function() {
 			 	
-			 	 });
+			 		if (link.attr("data-page") == "webdev"){
+			 			
+			 		}
+
+			 	});
 			 } 
 		}); 
-		 	menuClick(link);
+		 menuClick(link);
 		
 	});
 
