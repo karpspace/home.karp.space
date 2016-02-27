@@ -1,3 +1,5 @@
+@include mq($from: "wide") {
+
 $centerX:720px;
 $centerY:410px;
 
@@ -291,3 +293,4 @@ $otherrt2:-90deg;
     to   { transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
 }
 
+}  

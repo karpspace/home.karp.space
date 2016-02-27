@@ -7,50 +7,94 @@
 body {
   overflow: hidden; }
 
-nav {
-  width: 300px;
-  position: fixed;
-  right: 10px;
-  top: 350px;
-  z-index: 100; }
-  nav ul {
-    width: 280px;
-    margin: 0 auto;
-    text-align: center; }
-    nav ul li {
-      list-style: none;
-      font-family: "Quicksand", Helvetica, Sans-Serif;
-      font-size: 30px;
-      cursor: pointer;
-      -webkit-transition: color 1.5s ease, font-size 1.5s ease;
-      -moz-transition: color 1.5s ease, font-size 1.5s ease;
-      -o-transition: color 1.5s ease, font-size 1.5s ease;
-      transition: color 1.5s ease, font-size 1.5s ease; }
-    nav ul .activeBlue {
-      color: #414042;
+@media (min-width: 118.75em) {
+  nav {
+    width: 300px;
+    position: fixed;
+    right: 10px;
+    top: 350px;
+    z-index: 100; }
+    nav ul {
+      width: 280px;
+      margin: 0 auto;
+      text-align: center; }
+      nav ul li {
+        list-style: none;
+        font-family: "Quicksand", Helvetica, Sans-Serif;
+        font-size: 30px;
+        cursor: pointer;
+        -webkit-transition: color 1.5s ease, font-size 1.5s ease;
+        -moz-transition: color 1.5s ease, font-size 1.5s ease;
+        -o-transition: color 1.5s ease, font-size 1.5s ease;
+        transition: color 1.5s ease, font-size 1.5s ease; }
+      nav ul .activeBlue {
+        color: #414042;
+        font-weight: bold; }
+      nav ul .activeDark {
+        color: #1c75bc;
+        font-weight: bold; }
+      nav ul .activeLight {
+        color: #F1F2F2;
+        font-weight: bold; }
+
+  .dark {
+    color: #414042; }
+    .dark:hover {
       font-weight: bold; }
-    nav ul .activeDark {
-      color: #1c75bc;
+
+  .light {
+    color: #6d6e71; }
+    .light:hover {
       font-weight: bold; }
-    nav ul .activeLight {
-      color: #F1F2F2;
+
+  .blue {
+    color: #F1F2F2; }
+    .blue:hover {
+      font-weight: bold; } }
+@media (min-width: 75em) and (max-width: 118.74em) {
+  nav {
+    width: 300px;
+    position: fixed;
+    right: 10px;
+    top: 220px;
+    z-index: 100; }
+    nav ul {
+      width: 280px;
+      margin: 0 auto;
+      text-align: center; }
+      nav ul li {
+        list-style: none;
+        font-family: "Quicksand", Helvetica, Sans-Serif;
+        font-size: 20px;
+        cursor: pointer;
+        -webkit-transition: color 1.5s ease, font-size 1.5s ease;
+        -moz-transition: color 1.5s ease, font-size 1.5s ease;
+        -o-transition: color 1.5s ease, font-size 1.5s ease;
+        transition: color 1.5s ease, font-size 1.5s ease; }
+      nav ul .activeBlue {
+        color: #414042;
+        font-weight: bold; }
+      nav ul .activeDark {
+        color: #1c75bc;
+        font-weight: bold; }
+      nav ul .activeLight {
+        color: #F1F2F2;
+        font-weight: bold; }
+
+  .dark {
+    color: #414042; }
+    .dark:hover {
       font-weight: bold; }
 
-.dark {
-  color: #414042; }
-  .dark:hover {
-    font-weight: bold; }
+  .light {
+    color: #6d6e71; }
+    .light:hover {
+      font-weight: bold; }
 
-.light {
-  color: #6d6e71; }
-  .light:hover {
-    font-weight: bold; }
-
-.blue {
-  color: #F1F2F2; }
-  .blue:hover {
-    font-weight: bold; }
-
+  .blue {
+    color: #F1F2F2; }
+    .blue:hover {
+      font-weight: bold; } }
 .start {
   background: url(../img/startBack.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -88,230 +132,455 @@ nav {
   background-color: #F1F2F2;
   height: 100vh; }
 
-.webDevContainer {
-  width: 1600px;
-  height: 900px;
-  margin: 0 auto;
-  position: relative; }
+@media (min-width: 118.75em) {
+  .webDevContainer {
+    width: 1600px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative; }
 
-.webDevText {
-  position: absolute;
-  top: 410px;
-  left: 720px;
-  font-size: 50px;
-  /* border:2px solid black;
-   border-radius: 100px;
-   height: 32vh;
-   width: 32vh; 
-   padding-top:3vh;
-   padding-left: 1vh;
-   */ }
-  .webDevText h1 {
-    font-family: "Quicksand", Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
+  .webDevText {
+    position: absolute;
+    top: 410px;
+    left: 720px;
     font-size: 50px;
-    margin-bottom: -20px;
-    color: #1c75bc; }
+    /* border:2px solid black;
+     border-radius: 100px;
+     height: 32vh;
+     width: 32vh; 
+     padding-top:3vh;
+     padding-left: 1vh;
+     */ }
+    .webDevText h1 {
+      font-family: "Quicksand", Helvetica, Sans-Serif;
+      margin: 0;
+      padding: 0;
+      font-size: 50px;
+      margin-bottom: -20px;
+      color: #1c75bc; }
 
-.webdevLinkModal {
-  cursor: pointer;
-  color: #414042; }
-  .webdevLinkModal:hover {
-    color: #1c75bc;
-    font-weight: bold; }
+  .webdevLinkModal {
+    cursor: pointer;
+    color: #414042; }
+    .webdevLinkModal:hover {
+      color: #1c75bc;
+      font-weight: bold; }
 
-.php {
-  background-color: #F1F2F2;
-  font-size: 4vh;
-  position: absolute;
-  top: 20px;
-  left: 737px;
-  font-family: "Quicksand", Helvetica, Sans-Serif;
-  text-transform: uppercase;
-  top: 447px;
-  -webkit-animation: phpOrbit 80s linear infinite;
-  /* Chrome, Safari 5 */
-  -moz-animation: phpOrbit 80s linear infinite;
-  /* Firefox 5-15 */
-  -o-animation: phpOrbit 80s linear infinite;
-  /* Opera 12+ */
-  animation: phpOrbit 80s linear infinite;
-  /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */ }
+  .php {
+    background-color: #F1F2F2;
+    font-size: 4vh;
+    position: absolute;
+    top: 20px;
+    left: 737px;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    top: 447px;
+    -webkit-animation: phpOrbit 80s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: phpOrbit 80s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: phpOrbit 80s linear infinite;
+    /* Opera 12+ */
+    animation: phpOrbit 80s linear infinite;
+    /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */ }
 
-.phpOrbit {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  top: 348px;
-  left: 646px;
-  border: 2px solid #bcbec0;
-  border-radius: 130px; }
+  .phpOrbit {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 348px;
+    left: 646px;
+    border: 2px solid #bcbec0;
+    border-radius: 130px; }
 
-.python {
-  font-family: "Quicksand", Helvetica, Sans-Serif;
-  position: absolute;
-  left: 723px;
-  text-transform: uppercase;
-  top: 460px;
-  background-color: #F1F2F2;
-  font-size: 20px;
-  -webkit-animation: pythonOrbit 80s linear infinite;
-  /* Chrome, Safari 5 */
-  -moz-animation: pythonOrbit 80s linear infinite;
-  /* Firefox 5-15 */
-  -o-animation: pythonOrbit 80s linear infinite;
-  /* Opera 12+ */
-  animation: pythonOrbit 80s linear infinite;
+  .python {
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    position: absolute;
+    left: 723px;
+    text-transform: uppercase;
+    top: 460px;
+    background-color: #F1F2F2;
+    font-size: 20px;
+    -webkit-animation: pythonOrbit 80s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: pythonOrbit 80s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: pythonOrbit 80s linear infinite;
+    /* Opera 12+ */
+    animation: pythonOrbit 80s linear infinite;
           /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
-.pythonOrbit {
-  width: 440px;
-  height: 440px;
-  position: absolute;
-  top: 252px;
-  left: 551px;
-  border: 2px solid #bcbec0;
-  border-radius: 753px; }
+  .pythonOrbit {
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    top: 252px;
+    left: 551px;
+    border: 2px solid #bcbec0;
+    border-radius: 753px; }
 
-.magento {
-  background-color: #F1F2F2;
-  font-size: 2vh;
-  position: absolute;
-  left: 720px;
-  font-family: "Quicksand", Helvetica, Sans-Serif;
-  text-transform: uppercase;
-  top: 455px;
-  -webkit-animation: magentoOrbit 80s linear infinite;
-  /* Chrome, Safari 5 */
-  -moz-animation: magentoOrbit 80s linear infinite;
-  /* Firefox 5-15 */
-  -o-animation: magentoOrbit 80s linear infinite;
-  /* Opera 12+ */
-  animation: magentoOrbit 80s linear infinite;
+  .magento {
+    background-color: #F1F2F2;
+    font-size: 2vh;
+    position: absolute;
+    left: 720px;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    top: 455px;
+    -webkit-animation: magentoOrbit 80s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: magentoOrbit 80s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: magentoOrbit 80s linear infinite;
+    /* Opera 12+ */
+    animation: magentoOrbit 80s linear infinite;
             /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
-.magentoOrbit {
-  width: 650px;
-  height: 650px;
-  position: absolute;
-  top: 144px;
-  left: 448px;
-  border: 2px solid #bcbec0;
-  border-radius: 753px; }
+  .magentoOrbit {
+    width: 650px;
+    height: 650px;
+    position: absolute;
+    top: 144px;
+    left: 448px;
+    border: 2px solid #bcbec0;
+    border-radius: 753px; }
 
-.other {
-  background-color: #F1F2F2;
-  font-size: 3vh;
-  position: absolute;
-  left: 713px;
-  font-family: "Quicksand", Helvetica, Sans-Serif;
-  text-transform: uppercase;
-  top: 448px;
-  -webkit-animation: otherOrbit 80s linear infinite;
-  /* Chrome, Safari 5 */
-  -moz-animation: otherOrbit 80s linear infinite;
-  /* Firefox 5-15 */
-  -o-animation: otherOrbit 80s linear infinite;
-  /* Opera 12+ */
-  animation: otherOrbit 80s linear infinite;
+  .other {
+    background-color: #F1F2F2;
+    font-size: 3vh;
+    position: absolute;
+    left: 713px;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    top: 448px;
+    -webkit-animation: otherOrbit 80s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: otherOrbit 80s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: otherOrbit 80s linear infinite;
+    /* Opera 12+ */
+    animation: otherOrbit 80s linear infinite;
         /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
-.otherOrbit {
-  width: 880px;
-  height: 880px;
-  position: absolute;
-  top: 30px;
-  left: 337px;
-  border: 2px solid #bcbec0;
-  border-radius: 753px; }
+  .otherOrbit {
+    width: 880px;
+    height: 880px;
+    position: absolute;
+    top: 30px;
+    left: 337px;
+    border: 2px solid #bcbec0;
+    border-radius: 753px; }
 
-.orbitHover {
-  border: 2px dotted #1c75bc !important; }
+  .orbitHover {
+    border: 2px dotted #1c75bc !important; }
 
-@-webkit-keyframes phpOrbit {
-  from {
-    -webkit-transform: rotate(0deg) translateX(120px) rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
-@-moz-keyframes phpOrbit {
-  from {
-    -moz-transform: rotate(0deg) translateX(120px) rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
-@-o-keyframes phpOrbit {
-  from {
-    -o-transform: rotate(0deg) translateX(120px) rotate(0deg); }
-  to {
-    -o-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
-@keyframes phpOrbit {
-  from {
-    transform: rotate(0deg) translateX(120px) rotate(0deg); }
-  to {
-    transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
-@-webkit-keyframes pythonOrbit {
-  from {
-    -webkit-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
-  to {
-    -webkit-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
-@-moz-keyframes pythonOrbit {
-  from {
-    -moz-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
-  to {
-    -moz-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
-@-o-keyframes pythonOrbit {
-  from {
-    -o-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
-  to {
-    -o-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
-@keyframes pythonOrbit {
-  from {
-    transform: rotate(-180deg) translateX(225px) rotate(180deg); }
-  to {
-    transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
-@-webkit-keyframes magentoOrbit {
-  from {
-    -webkit-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
-  to {
-    -webkit-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
-@-moz-keyframes magentoOrbit {
-  from {
-    -moz-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
-  to {
-    -moz-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
-@-o-keyframes magentoOrbit {
-  from {
-    -o-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
-  to {
-    -o-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
-@keyframes magentoOrbit {
-  from {
-    transform: rotate(-90deg) translateX(330px) rotate(90deg); }
-  to {
-    transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
-@-webkit-keyframes otherOrbit {
-  from {
-    -webkit-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
-  to {
-    -webkit-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
-@-moz-keyframes otherOrbit {
-  from {
-    -moz-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
-  to {
-    -moz-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
-@-o-keyframes otherOrbit {
-  from {
-    -o-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
-  to {
-    -o-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
-@keyframes otherOrbit {
-  from {
-    transform: rotate(-270deg) translateX(435px) rotate(270deg); }
-  to {
-    transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
+  @-webkit-keyframes phpOrbit {
+    from {
+      -webkit-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+    to {
+      -webkit-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+  @-moz-keyframes phpOrbit {
+    from {
+      -moz-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+    to {
+      -moz-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+  @-o-keyframes phpOrbit {
+    from {
+      -o-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+    to {
+      -o-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+  @keyframes phpOrbit {
+    from {
+      transform: rotate(0deg) translateX(120px) rotate(0deg); }
+    to {
+      transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+  @-webkit-keyframes pythonOrbit {
+    from {
+      -webkit-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+    to {
+      -webkit-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+  @-moz-keyframes pythonOrbit {
+    from {
+      -moz-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+    to {
+      -moz-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+  @-o-keyframes pythonOrbit {
+    from {
+      -o-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+    to {
+      -o-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+  @keyframes pythonOrbit {
+    from {
+      transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+    to {
+      transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+  @-webkit-keyframes magentoOrbit {
+    from {
+      -webkit-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+    to {
+      -webkit-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+  @-moz-keyframes magentoOrbit {
+    from {
+      -moz-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+    to {
+      -moz-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+  @-o-keyframes magentoOrbit {
+    from {
+      -o-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+    to {
+      -o-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+  @keyframes magentoOrbit {
+    from {
+      transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+    to {
+      transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+  @-webkit-keyframes otherOrbit {
+    from {
+      -webkit-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+    to {
+      -webkit-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
+  @-moz-keyframes otherOrbit {
+    from {
+      -moz-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+    to {
+      -moz-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
+  @-o-keyframes otherOrbit {
+    from {
+      -o-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+    to {
+      -o-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
+  @keyframes otherOrbit {
+    from {
+      transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+    to {
+      transform: rotate(90deg) translateX(435px) rotate(-90deg); } } }
+@media (min-width: 75em) and (max-width: 118.74em) {
+  .webDevContainer {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative; }
+
+  .webDevText {
+    position: absolute;
+    top: 263px;
+    left: 434px;
+    /* border:2px solid black;
+     border-radius: 100px;
+     height: 32vh;
+     width: 32vh; 
+     padding-top:3vh;
+     padding-left: 1vh;
+     */ }
+    .webDevText h1 {
+      font-family: "Quicksand", Helvetica, Sans-Serif;
+      margin: 0;
+      padding: 0;
+      font-size: 35px;
+      margin-bottom: -20px;
+      color: #1c75bc; }
+
+  .webdevLinkModal {
+    cursor: pointer;
+    color: #414042; }
+    .webdevLinkModal:hover {
+      color: #1c75bc;
+      font-weight: bold; }
+
+  .php {
+    background-color: #F1F2F2;
+    font-size: 4vh;
+    position: absolute;
+    top: 20px;
+    left: 451px;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    top: 290px;
+    -webkit-animation: phpOrbit 8s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: phpOrbit 8s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: phpOrbit 8s linear infinite;
+    /* Opera 12+ */
+    animation: phpOrbit 8s linear infinite;
+    /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */ }
+
+  .phpOrbit {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 204px;
+    left: 366px;
+    border: 2px solid #bcbec0;
+    border-radius: 130px; }
+
+  .python {
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    position: absolute;
+    left: 430px;
+    text-transform: uppercase;
+    top: 290px;
+    background-color: #F1F2F2;
+    font-size: 15px;
+    -webkit-animation: pythonOrbit 8s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: pythonOrbit 8s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: pythonOrbit 8s linear infinite;
+    /* Opera 12+ */
+    animation: pythonOrbit 8s linear infinite;
+          /* Chrome, Firefox 16+, 
+IE 10+, Safari 5 */ }
+
+  .pythonOrbit {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 143px;
+    left: 305px;
+    border: 2px solid #bcbec0;
+    border-radius: 753px; }
+
+  .magento {
+    background-color: #F1F2F2;
+    font-size: 2vh;
+    position: absolute;
+    left: 434px;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    top: 293px;
+    -webkit-animation: magentoOrbit 8s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: magentoOrbit 8s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: magentoOrbit 8s linear infinite;
+    /* Opera 12+ */
+    animation: magentoOrbit 8s linear infinite;
+            /* Chrome, Firefox 16+, 
+IE 10+, Safari 5 */ }
+
+  .magentoOrbit {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 75px;
+    left: 244px;
+    border: 2px solid #bcbec0;
+    border-radius: 753px; }
+
+  .other {
+    background-color: #F1F2F2;
+    font-size: 3vh;
+    position: absolute;
+    left: 427px;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    top: 286px;
+    -webkit-animation: otherOrbit 8s linear infinite;
+    /* Chrome, Safari 5 */
+    -moz-animation: otherOrbit 8s linear infinite;
+    /* Firefox 5-15 */
+    -o-animation: otherOrbit 8s linear infinite;
+    /* Opera 12+ */
+    animation: otherOrbit 8s linear infinite;
+        /* Chrome, Firefox 16+, 
+IE 10+, Safari 5 */ }
+
+  .otherOrbit {
+    width: 570px;
+    height: 570px;
+    position: absolute;
+    top: 13px;
+    left: 184px;
+    border: 2px solid #bcbec0;
+    border-radius: 753px; }
+
+  .orbitHover {
+    border: 2px dotted #1c75bc !important; }
+
+  @-webkit-keyframes phpOrbit {
+    from {
+      -webkit-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to {
+      -webkit-transform: rotate(360deg) translateX(100px) rotate(-360deg); } }
+  @-moz-keyframes phpOrbit {
+    from {
+      -moz-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to {
+      -moz-transform: rotate(360deg) translateX(100px) rotate(-360deg); } }
+  @-o-keyframes phpOrbit {
+    from {
+      -o-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to {
+      -o-transform: rotate(360deg) translateX(100px) rotate(-360deg); } }
+  @keyframes phpOrbit {
+    from {
+      transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg); } }
+  @-webkit-keyframes pythonOrbit {
+    from {
+      -webkit-transform: rotate(-180deg) translateX(160px) rotate(180deg); }
+    to {
+      -webkit-transform: rotate(180deg) translateX(160px) rotate(-180deg); } }
+  @-moz-keyframes pythonOrbit {
+    from {
+      -moz-transform: rotate(-180deg) translateX(160px) rotate(180deg); }
+    to {
+      -moz-transform: rotate(180deg) translateX(160px) rotate(-180deg); } }
+  @-o-keyframes pythonOrbit {
+    from {
+      -o-transform: rotate(-180deg) translateX(160px) rotate(180deg); }
+    to {
+      -o-transform: rotate(180deg) translateX(160px) rotate(-180deg); } }
+  @keyframes pythonOrbit {
+    from {
+      transform: rotate(-180deg) translateX(160px) rotate(180deg); }
+    to {
+      transform: rotate(180deg) translateX(160px) rotate(-180deg); } }
+  @-webkit-keyframes magentoOrbit {
+    from {
+      -webkit-transform: rotate(-90deg) translateX(220px) rotate(90deg); }
+    to {
+      -webkit-transform: rotate(270deg) translateX(220px) rotate(-270deg); } }
+  @-moz-keyframes magentoOrbit {
+    from {
+      -moz-transform: rotate(-90deg) translateX(220px) rotate(90deg); }
+    to {
+      -moz-transform: rotate(270deg) translateX(220px) rotate(-270deg); } }
+  @-o-keyframes magentoOrbit {
+    from {
+      -o-transform: rotate(-90deg) translateX(220px) rotate(90deg); }
+    to {
+      -o-transform: rotate(270deg) translateX(220px) rotate(-270deg); } }
+  @keyframes magentoOrbit {
+    from {
+      transform: rotate(-90deg) translateX(220px) rotate(90deg); }
+    to {
+      transform: rotate(270deg) translateX(220px) rotate(-270deg); } }
+  @-webkit-keyframes otherOrbit {
+    from {
+      -webkit-transform: rotate(-270deg) translateX(280px) rotate(270deg); }
+    to {
+      -webkit-transform: rotate(90deg) translateX(280px) rotate(-90deg); } }
+  @-moz-keyframes otherOrbit {
+    from {
+      -moz-transform: rotate(-270deg) translateX(280px) rotate(270deg); }
+    to {
+      -moz-transform: rotate(90deg) translateX(280px) rotate(-90deg); } }
+  @-o-keyframes otherOrbit {
+    from {
+      -o-transform: rotate(-270deg) translateX(280px) rotate(270deg); }
+    to {
+      -o-transform: rotate(90deg) translateX(280px) rotate(-90deg); } }
+  @keyframes otherOrbit {
+    from {
+      transform: rotate(-270deg) translateX(280px) rotate(270deg); }
+    to {
+      transform: rotate(90deg) translateX(280px) rotate(-90deg); } } }
 .sysadmin {
   background-color: #1c75bc;
   height: 100vh; }

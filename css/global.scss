@@ -30,6 +30,16 @@ $startBackground:url(../img/startBack.jpg);
 	border-radius: 100%;
 } 
 
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 1200px,
+    wide:    1900px
+);
+
+
+@import '../bower_components/sass-mq/_mq';
+
 
 @import 'global/globalLo';
 @import 'global/globalM';
