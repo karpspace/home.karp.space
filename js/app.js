@@ -54,8 +54,27 @@ $(document).ready(function(){
 			onAfter:function(){
 			 	requestAnimationFrame(function() {
 			 	
-			 		if (link.attr("data-page") == "webdev"){
-			 			
+			 		if ((link.attr("data-page") == "webdev") && (1)){
+			 			orbitCheck = 1;
+			 			setTimeout(function(){
+			 				$(".php").mouseenter();
+			 				setTimeout(function(){
+			 					$(".php").mouseleave();
+				 				$(".python").mouseenter();
+				 				
+				 				setTimeout(function(){
+				 					$(".magento").mouseenter();
+				 					$(".python").mouseleave();
+				 					setTimeout(function(){
+				 						$(".other").mouseenter();
+				 						$(".magento").mouseleave();
+				 						setTimeout(function(){
+					 						$(".other").mouseleave();
+				 						},500)
+				 					},500)
+				 				},500)
+				 			},500)
+			 			},100)
 			 		}
 
 			 	});
