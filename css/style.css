@@ -369,8 +369,11 @@ IE 10+, Safari 5 */ }
       transform: rotate(-270deg) translateX(420px) rotate(270deg); }
     to {
       transform: rotate(90deg) translateX(420px) rotate(-90deg); } }
-  .webdevModal .phpSlide {
-    height: 400px; }
+  .webdevModal .phpSlider {
+    height: 800px; }
+    .webdevModal .phpSlider .slick-slide {
+      background-color: red;
+      height: 720px; }
   .webdevModal .phpList li {
     list-style: none;
     display: inline;

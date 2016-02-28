@@ -300,8 +300,12 @@
 
     .webdevModal{
 
-        .phpSlide{
-            height: 400px;
+        .phpSlider{
+            height: 800px;
+            .slick-slide{
+                background-color: red;
+                height: 720px;
+            }
         }
 
         .phpList{

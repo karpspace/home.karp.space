@@ -39,7 +39,7 @@ function menuClick(page){
 $(document).foundation();
 $(document).ready(function(){	
 
-
+ 
 
 	$(".expOrbit").hover(function(){
 		console.log($(this).attr("data-orbitName"));
@@ -184,6 +184,10 @@ $(document).ready(function(){
 
 
 	//Webdev View
+
+	$(".php").click(function(){
+		$('.phpSlider').slick();
+	});
 
 	$(".webdevLinkModal").mouseenter(function(){
 		$(".phpOrbit").removeClass(".orbitHover");
