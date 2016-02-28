@@ -298,4 +298,20 @@
         to   { transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
     }
 
+    .webdevModal{
+
+        .phpSlide{
+            height: 400px;
+        }
+
+        .phpList{
+            li{
+                list-style: none;
+                display: inline;
+                font-family: $quicksand;
+                font-size: 20px;
+            }
+        }
+    }
+
 }  

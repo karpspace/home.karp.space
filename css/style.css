@@ -368,7 +368,14 @@ IE 10+, Safari 5 */ }
     from {
       transform: rotate(-270deg) translateX(420px) rotate(270deg); }
     to {
-      transform: rotate(90deg) translateX(420px) rotate(-90deg); } } }
+      transform: rotate(90deg) translateX(420px) rotate(-90deg); } }
+  .webdevModal .phpSlide {
+    height: 400px; }
+  .webdevModal .phpList li {
+    list-style: none;
+    display: inline;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    font-size: 20px; } }
 @media (min-width: 75em) and (max-width: 106.24em) {
   .container {
     display: table;
@@ -1160,169 +1167,335 @@ IE 10+, Safari 5 */ }
   background-color: #414042;
   height: 100vh; }
 
-.expContainer {
-  height: 100vh;
-  width: 1600px;
-  position: relative; }
+@media (min-width: 106.25em) {
+  .expContainer {
+    height: 100vh;
+    width: 1600px;
+    position: relative; }
 
-.amcsOrbit {
-  border: 2px solid #F1F2F2;
-  border-radius: 10000px;
-  height: 3000px;
-  width: 3000px;
-  position: absolute;
-  top: -1000px;
-  left: 100px;
-  z-index: 1; }
+  .amcsOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 100px;
+    z-index: 1; }
 
-.asusOrbit {
-  border: 2px solid #F1F2F2;
-  border-radius: 10000px;
-  height: 3000px;
-  width: 3000px;
-  position: absolute;
-  top: -1000px;
-  left: 500px;
-  z-index: 1; }
+  .asusOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 500px;
+    z-index: 1; }
 
-.hatorOrbit {
-  border: 2px solid #F1F2F2;
-  border-radius: 10000px;
-  height: 3000px;
-  width: 3000px;
-  position: absolute;
-  top: -1000px;
-  left: 850px;
-  z-index: 1; }
+  .hatorOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 850px;
+    z-index: 1; }
 
-.paradowskiOrbit {
-  border: 2px solid #F1F2F2;
-  border-radius: 10000px;
-  height: 3000px;
-  width: 3000px;
-  position: absolute;
-  top: -1000px;
-  left: 1200px;
-  z-index: 1; }
+  .paradowskiOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 1200px;
+    z-index: 1; }
 
-.freelanceOrbit {
-  border: 2px dashed #F1F2F2;
-  border-radius: 10000px;
-  height: 5000px;
-  width: 5000px;
-  position: absolute;
-  top: 78px;
-  left: -1440px;
-  z-index: 1;
-  pointer-events: none; }
+  .freelanceOrbit {
+    border: 2px dashed #F1F2F2;
+    border-radius: 10000px;
+    height: 5000px;
+    width: 5000px;
+    position: absolute;
+    top: 78px;
+    left: -1440px;
+    z-index: 1;
+    pointer-events: none; }
 
-.amcsObject {
-  position: absolute;
-  top: 586px;
-  left: 63px;
-  height: 80px;
-  width: 80px;
-  background-color: #F1F2F2;
-  border-radius: 300px;
-  z-index: 1000; }
-
-.amcsText {
-  top: 400px;
-  left: 180px; }
-  .amcsText h1 {
-    font-size: 80px; }
-
-.asusText {
-  top: 400px;
-  left: 580px; }
-  .asusText h1 {
-    font-size: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-.hatorText {
-  top: 400px;
-  left: 920px; }
-  .hatorText h1 {
-    font-size: 60px;
-    margin-bottom: 15px;
-    margin-top: 18px; }
-
-.paradowskiText {
-  top: 400px;
-  left: 1260px; }
-  .paradowskiText h1 {
-    font-size: 50px;
-    margin-bottom: 15px;
-    margin-top: 30px; }
-
-.asusObject {
-  position: absolute;
-  top: 216px;
-  left: 482px;
-  height: 80px;
-  width: 80px;
-  background-color: #F1F2F2;
-  border-radius: 300px;
-  z-index: 1000; }
-
-.hatorObject {
-  position: absolute;
-  top: 806px;
-  left: 862px;
-  height: 50px;
-  width: 50px;
-  background-color: #F1F2F2;
-  border-radius: 300px;
-  z-index: 1000; }
-
-.paradowskiObject {
-  position: absolute;
-  top: 276px;
-  left: 1196px;
-  height: 40px;
-  width: 40px;
-  background-color: #F1F2F2;
-  border-radius: 300px;
-  z-index: 1000; }
-
-.expText {
-  z-index: 1000;
-  font-family: "Quicksand", Helvetica, Sans-Serif;
-  position: absolute;
-  color: lightGray; }
-  .expText h1, .expText h2 {
-    font-family: "Quicksand", Helvetica, Sans-Serif; }
-  .expText p {
-    margin-top: -10px; }
-  .expText h2 {
-    margin-top: -40px;
-    font-size: 39px; }
-  .expText h1 {
-    text-transform: uppercase; }
-  .expText p {
-    border-top: 2px solid #F1F2F2;
-    padding: 10px 0px;
-    font-size: 20px; }
-  .expText span {
-    font-size: 15px;
-    display: block; }
-
-.moreInfoButton {
-  z-index: 1000;
-  cursor: pointer;
-  width: 145px;
-  text-align: center;
-  font-family: "Quicksand", Helvetica, Sans-Serif;
-  border: 1px solid #F1F2F2;
-  padding: 5px; }
-  .moreInfoButton:hover {
+  .amcsObject {
+    position: absolute;
+    top: 586px;
+    left: 63px;
+    height: 80px;
+    width: 80px;
     background-color: #F1F2F2;
-    color: #414042; }
+    border-radius: 300px;
+    z-index: 1000; }
 
-.expColor {
-  background-color: yellow !important; }
+  .amcsText {
+    top: 400px;
+    left: 180px; }
+    .amcsText h1 {
+      font-size: 80px; }
 
+  .asusText {
+    top: 400px;
+    left: 580px; }
+    .asusText h1 {
+      font-size: 70px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+
+  .hatorText {
+    top: 400px;
+    left: 920px; }
+    .hatorText h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+      margin-top: 18px; }
+
+  .paradowskiText {
+    top: 400px;
+    left: 1260px; }
+    .paradowskiText h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+      margin-top: 30px; }
+
+  .asusObject {
+    position: absolute;
+    top: 216px;
+    left: 482px;
+    height: 80px;
+    width: 80px;
+    background-color: #F1F2F2;
+    border-radius: 300px;
+    z-index: 1000; }
+
+  .hatorObject {
+    position: absolute;
+    top: 806px;
+    left: 862px;
+    height: 50px;
+    width: 50px;
+    background-color: #F1F2F2;
+    border-radius: 300px;
+    z-index: 1000; }
+
+  .paradowskiObject {
+    position: absolute;
+    top: 276px;
+    left: 1196px;
+    height: 40px;
+    width: 40px;
+    background-color: #F1F2F2;
+    border-radius: 300px;
+    z-index: 1000; }
+
+  .expText {
+    z-index: 1000;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    position: absolute;
+    color: lightGray; }
+    .expText h1, .expText h2 {
+      font-family: "Quicksand", Helvetica, Sans-Serif; }
+    .expText p {
+      margin-top: -10px; }
+    .expText h2 {
+      margin-top: -40px;
+      font-size: 39px; }
+    .expText h1 {
+      text-transform: uppercase; }
+    .expText p {
+      border-top: 2px solid #F1F2F2;
+      padding: 10px 0px;
+      font-size: 20px; }
+    .expText span {
+      font-size: 15px;
+      display: block; }
+
+  .moreInfoButton {
+    z-index: 1000;
+    cursor: pointer;
+    width: 145px;
+    text-align: center;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    border: 1px solid #F1F2F2;
+    padding: 5px; }
+    .moreInfoButton:hover {
+      background-color: #F1F2F2;
+      color: #414042; }
+
+  .expColor {
+    background-color: yellow !important; } }
+@media (min-width: 75em) and (max-width: 106.24em) {
+  .expContainer {
+    height: 100vh;
+    width: 1600px;
+    position: relative; }
+
+  .amcsOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 50px;
+    z-index: 1; }
+
+  .asusOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 340px;
+    z-index: 1; }
+
+  .hatorOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 600px;
+    z-index: 1; }
+
+  .paradowskiOrbit {
+    border: 2px solid #F1F2F2;
+    border-radius: 10000px;
+    height: 3000px;
+    width: 3000px;
+    position: absolute;
+    top: -1000px;
+    left: 820px;
+    z-index: 1; }
+
+  .freelanceOrbit {
+    border: 2px dashed #F1F2F2;
+    border-radius: 10000px;
+    height: 5000px;
+    width: 5000px;
+    position: absolute;
+    top: 78px;
+    left: -1440px;
+    z-index: 1;
+    pointer-events: none; }
+
+  .amcsObject {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    height: 60px;
+    width: 60px;
+    background-color: #F1F2F2;
+    border-radius: 300px;
+    z-index: 1000; }
+
+  .amcsText {
+    top: 300px;
+    left: 80px; }
+    .amcsText h1 {
+      font-size: 65px;
+      margin-top: -12px;
+      margin-bottom: 22px; }
+
+  .asusText {
+    top: 300px;
+    left: 380px; }
+    .asusText h1 {
+      font-size: 50px;
+      margin-top: 8px;
+      margin-bottom: 22px; }
+
+  .hatorText {
+    top: 300px;
+    left: 635px; }
+    .hatorText h1 {
+      font-size: 35px;
+      margin-bottom: 25px;
+      margin-top: 26px; }
+
+  .paradowskiText {
+    top: 300px;
+    left: 860px; }
+    .paradowskiText h1 {
+      font-size: 20px;
+      margin-bottom: 25px;
+      margin-top: 47px; }
+
+  .asusObject {
+    position: absolute;
+    top: 46px;
+    left: 375px;
+    height: 55px;
+    width: 55px;
+    background-color: #F1F2F2;
+    border-radius: 300px;
+    z-index: 1000; }
+
+  .hatorObject {
+    position: absolute;
+    top: 506px;
+    left: 585px;
+    height: 35px;
+    width: 35px;
+    background-color: #F1F2F2;
+    border-radius: 300px;
+    z-index: 1000; }
+
+  .paradowskiObject {
+    position: absolute;
+    top: 276px;
+    left: 815px;
+    height: 40px;
+    width: 40px;
+    background-color: #F1F2F2;
+    border-radius: 300px;
+    z-index: 1000; }
+
+  .expText {
+    z-index: 1000;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    position: absolute;
+    color: lightGray; }
+    .expText h1, .expText h2 {
+      font-family: "Quicksand", Helvetica, Sans-Serif; }
+    .expText p {
+      margin-top: -10px; }
+    .expText h2 {
+      margin-top: -40px;
+      font-size: 25px; }
+    .expText h1 {
+      text-transform: uppercase; }
+    .expText p {
+      border-top: 2px solid #F1F2F2;
+      padding: 5px 0px;
+      font-size: 15px; }
+    .expText span {
+      font-size: 15px;
+      display: block; }
+
+  .moreInfoButton {
+    z-index: 1000;
+    cursor: pointer;
+    width: 145px;
+    text-align: center;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    border: 1px solid #F1F2F2;
+    padding: 5px;
+    font-size: 10px; }
+    .moreInfoButton:hover {
+      background-color: #F1F2F2;
+      color: #414042; }
+
+  .expColor {
+    background-color: yellow !important; } }
 .about {
   background-color: #F1F2F2;
   height: 100vh; }
