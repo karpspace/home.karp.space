@@ -30,11 +30,20 @@ $startBackground:url(../img/startBack.jpg);
 	border-radius: 100%;
 } 
 
+.bold{
+	font-weight: bold;
+}
+
+
+body{
+	overflow: hidden;
+}
+
 $mq-breakpoints: (
     mobile:  320px,
     tablet:  740px,
     desktop: 1200px,
-    wide:    1900px
+    wide:    1700px
 );
 
 

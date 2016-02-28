@@ -1,0 +1,189 @@
+.expContainer{
+	height: 100vh;
+	width: 1600px;
+	position: relative;
+}
+
+.amcsOrbit{
+	border: 2px solid $lightGray;
+	border-radius: 10000px;
+	height: 3000px;
+	width: 3000px;
+	position: absolute;
+	top:-1000px;
+	left: 100px;
+	z-index: 1;
+
+}
+.asusOrbit{
+	border: 2px solid $lightGray;
+	border-radius: 10000px;
+	height: 3000px;
+	width: 3000px;
+	position: absolute;
+	top:-1000px;
+	left: 500px;
+	z-index: 1;
+}
+.hatorOrbit{
+	border: 2px solid $lightGray;
+	border-radius: 10000px;
+	height: 3000px;
+	width: 3000px;
+	position: absolute;
+	top:-1000px;
+	left: 850px;
+	z-index: 1;
+}
+.paradowskiOrbit{
+	border: 2px solid $lightGray;
+	border-radius: 10000px;
+	height: 3000px;
+	width: 3000px;
+	position: absolute;
+	top:-1000px;
+	left: 1200px;
+	z-index: 1;
+
+}
+
+.freelanceOrbit{
+	border: 2px dashed $lightGray;
+	border-radius: 10000px;
+	height: 5000px;
+	width: 5000px;
+	position: absolute;
+	top: 78px;
+	left: -1440px;
+	z-index: 1;
+	pointer-events:none;
+}
+
+.amcsObject{
+	@include dot(63px,586px,80px);
+	background-color: $lightGray;
+	border-radius: 300px;
+	z-index:1000;
+}
+
+.amcsText{
+	top:400px;
+	left: 180px;
+	h1{
+		font-size: 80px;
+	}
+
+}
+
+.asusText{
+	top:400px;
+	left: 580px;
+	h1{
+		font-size: 70px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+}
+
+
+
+.hatorText{
+	top:400px;
+	left: 920px;
+	h1{
+		font-size: 60px;
+		margin-bottom: 15px;
+		margin-top: 18px;
+	}
+
+}
+
+.paradowskiText{
+	top:400px;
+	left: 1260px;
+	h1{
+		font-size: 50px;
+		margin-bottom: 15px;
+		margin-top: 30px;
+	}
+
+}
+
+
+
+
+
+.asusObject{
+	@include dot(482px,216px,80px);
+	background-color: $lightGray;
+	border-radius: 300px;
+	z-index:1000;
+}
+
+.hatorObject{
+	@include dot(862px,806px,50px);
+	background-color: $lightGray;
+	border-radius: 300px;
+	z-index:1000;
+}
+
+.paradowskiObject{
+	@include dot(1196px,276px,40px);
+	background-color: $lightGray;
+	border-radius: 300px;
+	z-index:1000;
+}
+
+
+
+.expText{
+	z-index: 1000;
+	font-family: $quicksand;
+	position: absolute;
+	color:lightGray;
+	h1,h2{
+		font-family: $quicksand;
+	}
+	p{
+		margin-top: -10px;
+	}
+
+	h2{
+		margin-top: -40px;
+		font-size: 39px;
+	}
+	h1{
+		text-transform: uppercase;
+	}
+	p{
+		border-top: 2px solid $lightGray;
+		padding: 10px 0px;
+		font-size: 20px;
+	}
+	span{
+		font-size: 15px;
+		display: block;
+	}
+
+
+}
+
+
+ .moreInfoButton{
+ 	z-index: 1000;
+ 	cursor: pointer;
+ 	width: 145px;
+ 	text-align: center;
+ 	font-family: $quicksand;
+ 	border: 1px solid $lightGray; 
+ 	padding: 5px;
+ 	&:hover{
+ 		background-color: $lightGray;
+ 		color:$darkGray;	
+ 	}
+ }
+
+ .expColor{
+ 	background-color: yellow !important;
+ }

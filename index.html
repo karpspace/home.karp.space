@@ -15,7 +15,7 @@
 
     
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/foundation-6/js/foundation.min.js"></script>
+    <script src="bower_components/foundation-6/js/foundation.js"></script>
     <script src="bower_components/motion-ui/dist/motion-ui.min.js"></script>
     <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 
@@ -30,11 +30,11 @@
     <nav>
       <ul>
       
-        <li class=" webdevLink animated " data-page="webdev">webdev</li>
-        <li class=" sysadminLink animated " data-page="sysadmin">sys admin</li>
-        <li class=" expLink animated" data-page="exp">experience</li>
-        <li class=" aboutLink animated " data-page="about">about me</li>
-        <li class=" contactLink animated " data-page="contact">contact</li>
+        <li class="webdevLink animated"    data-page="webdev">webdev</li>
+        <li class="sysadminLink animated"  data-page="sysadmin">sys admin</li>
+        <li class="expLink animated"       data-page="exp">experience</li>
+        <li class="aboutLink animated"     data-page="about">about me</li>
+        <li class="contactLink animated"   data-page="contact">contact</li>
 
       </ul>
     </nav>
@@ -43,7 +43,7 @@
           <div class="large-9 columns">
             <div class="nameStart">
               <h1>
-                Michael Karpiński 
+               Michael Karpiński 
                 <i  data-page="webdev" class="fa nextBorder webdevLink fa-angle-down"></i>
               </h1>
               <h2>WebDev / SysAdmin </h2>
@@ -51,30 +51,123 @@
           </div>
         </div>
       </div>      
+          
       <div class="webdev">
-
-      <div class="webDevContainer">
-      <div class="phpOrbit"></div>
-      <div class="pythonOrbit"></div>
-      <div class="magentoOrbit"></div>
-      <div class="otherOrbit"></div>
-      <div class="webDevText">
-        <h1>web</h1>
-        <h1>dev</h1>
-      </div>
-      <h2 class="php webdevLinkModal" data-open="phpModal" data-name="php">php</h2>
-      <h2 class="python webdevLinkModal" data-open="pythonModal"  data-name="python">python</h2> 
-      <h2 class="magento webdevLinkModal" data-open="magentoModal"  data-name="magento">magento</h2>
-      <h2 class="other webdevLinkModal" data-open="otherModal"  data-name="other">other</h2>
+        <div class=" container">
+        <div class=" content">
+        <div class="webDevContainer">
+          <div class="phpOrbit"></div>
+          <div class="pythonOrbit"></div>
+          <div class="magentoOrbit"></div>
+          <div class="otherOrbit"></div>
+          <div class="webDevText">
+          <h1>web</h1>
+            <h1>dev</h1>
+          </div>
+         <h2 class="php webdevLinkModal"      data-open="phpModal"     data-name="php">php</h2>
+           <h2 class="python webdevLinkModal" data-open="pythonModal"  data-name="python">python</h2> 
+         <h2 class="magento webdevLinkModal"  data-open="magentoModal" data-name="magento">magento</h2>
+        <h2 class="other webdevLinkModal"     data-open="otherModal"   data-name="other">other</h2> 
         </div>
+      </div>
+       </div>
       </div>
       <div class="sysadmin">
-        
-        <div class="sysmain">
-          <div class="sysbox"></div>
+        <div class="container">
+          <div class="content">
+            <div class="sysadminContainer">
+              <div class = "circle servicesDot" data-sysAdminInfo = "services" ></div>
+              <div class = "circle httpDot " data-sysAdminInfo = "http"></div>
+              <div class = "line httpLine"></div>
+              <div class = "line mySqlLine"></div>
+              <div class = "circle mySqlDot" data-sysAdminInfo = "mysql"></div>
+               <div class = "line ftpLine"></div>
+               <div class = "circle ftpDot"  data-sysAdminInfo = "ftp"></div>
+               <div class = "line dnsLine"></div>
+               <div class = "circle dnsDot"  data-sysAdminInfo = "dns"></div>
+               <div class = "line cpLine"></div>
+               <div class = "circle cpDot"  data-sysAdminInfo = "cp"></div>
+               <div class = "line emailLine"></div>
+               <div class = "circle emailDot"  data-sysAdminInfo = "email"></div>
+               <div class = "line adminLine"></div>
+               <div class = "circle adminDot"  data-sysAdminInfo = "admin"></div>
+               <div class = "line securityLine"></div>
+               <div class = "circle securityDot" data-sysAdminInfo = "security"></div>
+               <div class = "line cliLine"></div>
+               <div class = "circle cliDot"  data-sysAdminInfo = "cli"></div>
+               <div class = "circle osDot"  data-sysAdminInfo = "os"></div>
+               <div class = "servicesCap  caption">services</div>
+               <div class = "httpCap caption">http</div>
+               <div class = "mySqlCap caption">mySql</div>
+               <div class = "ftpCap caption">ftp</div>
+               <div class = "cpCap caption">cp</div>
+               <div class = "mailCap caption">mail</div>
+               <div class = "dnsCap caption">dns</div>
+               <div class = "cliCap caption">cli</div>
+               <div class = "osCap caption">os</div>
+               <div class = "securityCap caption">security</div>
+               <div class = "adminCap  caption">administration</div>
+
+               <div class="syadminFrame frame animated">
+              
+               </div>
+
+               </div>
+            </div>
         </div>
       </div>
-      <div class="exp"></div>
+      <div class="exp">
+        <div class="container">
+          <div class="content">
+            <div class="expContainer">
+              <div class="amcsOrbit expOrbit" data-orbitName ="amcs"></div>
+              <div class="amcsObject expObject"></div>
+              <div class="amcsText expText">
+                <h1 class="">AMCS</h1>
+                <h2>Internet Ltd</h2>
+                <p>  <span>from 2013</span>
+                  webdev / sysadmin
+                </p>
+                  <div class="moreInfoButton">MORE DETAILS</div>
+              </div>
+
+              <div class="asusOrbit expOrbit" data-orbitName ="asus"></div>
+              <div class="asusObject expObject"></div>
+               <div class="asusText expText">
+                <h1 class="">Asus </h1>
+                <h2>Poland</h2>
+                <p>  <span>2012 - 2013</span>
+                  webdev / help-desk
+                
+                </p>
+                <div class="moreInfoButton">MORE DETAILS</div>
+              </div>
+              <div class="hatorOrbit expOrbit" data-orbitName ="hator"></div>
+              <div class="hatorObject expObject"></div>
+                <div class="hatorText expText">
+                <h1 class="">Hator</h1>
+                <h2>ABL</h2>
+                <p>  <span>2012 - 2011</span>
+                  webdev
+                </p>
+                <div class="moreInfoButton">MORE DETAILS</div>
+              </div>
+              <div class="paradowskiOrbit expOrbit" data-orbitName ="paradowski"></div>
+              <div class="paradowskiObject expObject"></div>
+                <div class="paradowskiText expText">
+                <h1 class="">Paradowski</h1>
+                <h2>sp. z.o.o</h2>
+                <p>  <span>2011 - 2010</span>
+                  it administrator
+                </p>
+                <div class="moreInfoButton">MORE DETAILS</div>
+              </div>
+              <div class="freelanceOrbit"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="about"></div>
       <div class="contact"></div>
 
@@ -86,7 +179,7 @@
       <!-- WebDev -->
      
       <!-- Php -->
-      <div class="reveal full" id="phpModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+      <div class="reveal full" id="phpModal" data-reveal >
         <div class="row">
           <div class="small-12 columns">
             PHP
@@ -149,6 +242,7 @@
 
 
      <script src="js/app.js"></script>
+
     </body>
 
 </html>

@@ -1,14 +1,14 @@
 @include mq($from: "desktop", $until: "wide") {
 
-    $centerX:434px;
+    $centerX:260px;
     $centerY:263px;
    
     $webDevFontSize:35px;
 
-    $phpTime:  8s;
-    $pythonTime:  8s; 
-    $magentoTime:  8s;
-    $otherTime:  8s;
+    $phpTime:  400s;
+    $pythonTime:  400s; 
+    $magentoTime:  400s;
+    $otherTime:  400s;
 
 
     $rf1:0deg;
@@ -43,8 +43,20 @@
     $otherrt2:-90deg;
 
 
+
+  .container{
+  display: table;
+  height: 100vh;
+   width: 100vw;
+}
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
     .webDevContainer{
-        width: 1000px;
+        width: 600px;
         height: 600px;
         margin: 0 auto;
         position: relative;
@@ -94,11 +106,11 @@
         background-color: $lightGray;
         font-size: 4vh;
         position: absolute; 
-        top: 20px;
-        left:$centerX + 17px;
+        
+        left:$centerX + 5px;
         font-family: $quicksand;
         text-transform: uppercase;
-        top: $centerY + 27px;
+        top: $centerY + 17px;
         -webkit-animation: phpOrbit $phpTime linear infinite; /* Chrome, Safari 5 */
            -moz-animation: phpOrbit $phpTime linear infinite; /* Firefox 5-15 */
              -o-animation: phpOrbit $phpTime linear infinite; /* Opera 12+ */
@@ -109,15 +121,15 @@
         height: 200px;
         position: absolute;
         top: 204px;
-        left: 366px;
-        border: 2px solid $mediumGray;
+        left: 190px;
+        border: 1px solid $mediumGray;
         border-radius: 130px;
     }
 
     .python{  
         font-family: $quicksand;
         position: absolute;
-        left: 430px;
+        left: 260px;
         text-transform: uppercase;
         top: 290px;
         background-color: $lightGray;
@@ -133,8 +145,8 @@
         height: 320px;
         position: absolute;
         top: 143px;
-        left: 305px;
-        border: 2px solid $mediumGray;
+        left: 130px;
+        border: 1px solid $mediumGray;
         border-radius: 753px;
     }
 
@@ -157,8 +169,8 @@
         height: 450px;
         position: absolute;
         top: 75px;
-        left: 244px;
-        border: 2px solid $mediumGray;
+        left: 65px;
+        border: 1px solid $mediumGray;
         border-radius: 753px;
     }
 
@@ -178,13 +190,13 @@
     }
 
     .otherOrbit{
-         width: 570px;
+        width: 570px;
         height: 570px;
         position: absolute;
         top: 13px;
-        left: 184px;
+        left: 4px;
       
-        border: 2px solid $mediumGray;
+        border: 1px solid $mediumGray;
         border-radius: 753px;
     }
 

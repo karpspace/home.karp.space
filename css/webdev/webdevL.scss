@@ -1,296 +1,301 @@
 @include mq($from: "wide") {
 
-$centerX:720px;
-$centerY:410px;
+    $centerX:390px;
+    $centerY:380px;
+   
+    $webDevFontSize:55px;
 
-$webDevFontSize: 50px;
-.webDevContainer{
-    width: 1600px;
-    height: 900px;
-    margin: 0 auto;
-    position: relative;
-}
-.webDevText{
-    position: absolute;
-    top:$centerY; 
-    left:$centerX;
-    font-size: $webDevFontSize;
+    $phpTime:  800s;
+    $pythonTime:  800s; 
+    $magentoTime:  800s;
+    $otherTime:  800s;
 
-    h1{
+
+    $rf1:0deg;
+    $txf:130px;
+    $rf2:0deg;
+    $rt1:360deg;
+    $txt:130px;
+    $rt2:-360deg;
+
+    $pythonrf1:-180deg;
+    $pythontxf:220px;
+    $pythonrf2:180deg;
+
+    $pythonrt1:180deg;
+    $pythontxt:220px;
+    $pythonrt2:-180deg;
+
+    $magentorf1:-90deg;
+    $magentotxf:320px; 
+    $magentorf2:90deg;
+
+    $magentort1:270deg;
+    $magentotxt:320px;
+    $magentort2:-270deg;
+
+    $otherrf1:-270deg;
+    $othertxf:420px;
+    $otherrf2:270deg;
+
+    $otherrt1:90deg;
+    $othertxt:420px;
+    $otherrt2:-90deg;
+
+
+
+
+
+    .webDevContainer{
+        width: 900px;
+        height: 900px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .webDevText{
+        position: absolute;
+        top:$centerY + 25px; 
+        left:$centerX - 5px ;
+
+        h1{
+            font-family: $quicksand;
+            margin: 0;
+            padding: 0;
+            font-size: $webDevFontSize;
+            margin-bottom: -20px;
+            color:$blue; 
+            line-height: 1.2;   
+           
+        }  
+
+       /* border:2px solid black;
+        border-radius: 100px;
+        height: 32vh;
+        width: 32vh; 
+        padding-top:3vh;
+        padding-left: 1vh;
+        */
+    }
+     
+
+    .webdevLinkModal{
+        cursor: pointer;
+     
+        &:hover{
+            color:$blue;
+            font-weight: bold;
+
+        }
+
+     
+            color:$darkGray;
+      
+    } 
+
+
+
+    .php{  
+        background-color: $lightGray;
+        font-size: 4vh;
+        position: absolute; 
+        
+        left:$centerX + 15px;
         font-family: $quicksand;
-        margin: 0;
-        padding: 0;
-        font-size: $webDevFontSize;
-        margin-bottom: -20px;
-        color:$blue;    
-       
-    }  
-
-   /* border:2px solid black;
-    border-radius: 100px;
-    height: 32vh;
-    width: 32vh; 
-    padding-top:3vh;
-    padding-left: 1vh;
-    */
-}
- 
- $phpTime:  80s;
- $pythonTime:  80s; 
- $magentoTime:  80s;
- $otherTime:  80s;
-
-
-
-.webdevLinkModal{
-    cursor: pointer;
- 
-    &:hover{
-        color:$blue;
-        font-weight: bold;
-
+        text-transform: uppercase;
+        top: $centerY + 50px;
+        -webkit-animation: phpOrbit $phpTime linear infinite; /* Chrome, Safari 5 */
+           -moz-animation: phpOrbit $phpTime linear infinite; /* Firefox 5-15 */
+             -o-animation: phpOrbit $phpTime linear infinite; /* Opera 12+ */
+                animation: phpOrbit $phpTime linear infinite; /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */
+    }
+    .phpOrbit{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 330px;
+        left: 315px;
+        border: 2px solid $mediumGray;
+        border-radius: 130px;
     }
 
- 
-        color:$darkGray;
-  
-} 
+    .python{  
+        font-family: $quicksand;
+        position: absolute;
+        left: 400px;
+        text-transform: uppercase;
+        top: 440px;
+        background-color: $lightGray;
+        font-size: 20px;
+        -webkit-animation: pythonOrbit $pythonTime linear infinite; /* Chrome, Safari 5 */
+           -moz-animation: pythonOrbit $pythonTime linear infinite; /* Firefox 5-15 */
+             -o-animation: pythonOrbit $pythonTime linear infinite; /* Opera 12+ */
+                animation: pythonOrbit $pythonTime linear infinite; /* Chrome, Firefox 16+, 
+                                                          IE 10+, Safari 5 */  
+    }
+    .pythonOrbit{
+        width: 440px;
+        height: 440px;
+        position: absolute;
+        top: 228px;
+        left: 220px;
+        border: 2px solid $mediumGray;
+        border-radius: 753px;
+    }
+
+    .magento{ 
+      background-color: $lightGray;
+        font-size: 2vh;
+        position: absolute;
+        left: $centerX;
+        font-family: $quicksand;
+        text-transform: uppercase;
+        top: $centerY + $webDevFontSize - 5px;
+        -webkit-animation: magentoOrbit $magentoTime linear infinite; /* Chrome, Safari 5 */
+           -moz-animation: magentoOrbit $magentoTime linear infinite; /* Firefox 5-15 */
+             -o-animation: magentoOrbit $magentoTime linear infinite; /* Opera 12+ */
+                animation: magentoOrbit $magentoTime linear infinite; /* Chrome, Firefox 16+, 
+                                                          IE 10+, Safari 5 */  
+    }
+    .magentoOrbit{
+        width: 640px;
+        height: 640px;
+        position: absolute;
+        top: 120px;
+        left: 120px;
+        border: 2px solid $mediumGray;
+        border-radius: 753px;
+    }
+
+    .other{  
+        background-color: $lightGray;
+        font-size: 3vh;
+        position: absolute; 
+        left: $centerX - 7px; 
+        font-family: $quicksand;
+        text-transform: uppercase;
+        top: $centerY + $webDevFontSize - 12px;
+        -webkit-animation: otherOrbit $otherTime linear infinite; /* Chrome, Safari 5 */
+           -moz-animation: otherOrbit $otherTime linear infinite; /* Firefox 5-15 */
+             -o-animation: otherOrbit $otherTime linear infinite; /* Opera 12+ */
+                animation: otherOrbit $otherTime linear infinite; /* Chrome, Firefox 16+, 
+                                                          IE 10+, Safari 5 */  
+    }
+
+    .otherOrbit{
+        width:  850px;
+        height: 850px;
+        position: absolute;
+        top: 12px;
+        left: 16px;
+      
+        border: 2px solid $mediumGray;
+        border-radius: 753px;
+    }
 
 
-
-.php{  
-    background-color: $lightGray;
-    font-size: 4vh;
-    position: absolute; 
-    top: 20px;
-    left:$centerX + 17px;
-    font-family: $quicksand;
-    text-transform: uppercase;
-    top: $centerY + 37px;
-    -webkit-animation: phpOrbit $phpTime linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: phpOrbit $phpTime linear infinite; /* Firefox 5-15 */
-         -o-animation: phpOrbit $phpTime linear infinite; /* Opera 12+ */
-            animation: phpOrbit $phpTime linear infinite; /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */
-}
-.phpOrbit{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 348px;
-    left: 646px;
-    border: 2px solid $mediumGray;
-    border-radius: 130px;
-}
-
-.python{  
-    font-family: $quicksand;
-    position: absolute;
-    left: 723px;
-    text-transform: uppercase;
-    top: 460px;
-    background-color: $lightGray;
-    font-size: 20px;
-    -webkit-animation: pythonOrbit $pythonTime linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: pythonOrbit $pythonTime linear infinite; /* Firefox 5-15 */
-         -o-animation: pythonOrbit $pythonTime linear infinite; /* Opera 12+ */
-            animation: pythonOrbit $pythonTime linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */  
-}
-.pythonOrbit{
-    width: 440px;
-    height: 440px;
-    position: absolute;
-    top: 252px;
-    left: 551px;
-    border: 2px solid $mediumGray;
-    border-radius: 753px;
-}
-
-.magento{ 
-  background-color: $lightGray;
-    font-size: 2vh;
-    position: absolute;
-    left: $centerX;
-    font-family: $quicksand;
-    text-transform: uppercase;
-    top: $centerY + $webDevFontSize - 5px;
-    -webkit-animation: magentoOrbit $magentoTime linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: magentoOrbit $magentoTime linear infinite; /* Firefox 5-15 */
-         -o-animation: magentoOrbit $magentoTime linear infinite; /* Opera 12+ */
-            animation: magentoOrbit $magentoTime linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */  
-}
-.magentoOrbit{
-    width: 650px;
-    height: 650px;
-    position: absolute;
-    top: 144px;
-    left: 448px;
-    border: 2px solid $mediumGray;
-    border-radius: 753px;
-}
-
-.other{  
-    background-color: $lightGray;
-    font-size: 3vh;
-    position: absolute; 
-    left: $centerX - 7px; 
-    font-family: $quicksand;
-    text-transform: uppercase;
-    top: $centerY + $webDevFontSize - 12px;
-    -webkit-animation: otherOrbit $otherTime linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: otherOrbit $otherTime linear infinite; /* Firefox 5-15 */
-         -o-animation: otherOrbit $otherTime linear infinite; /* Opera 12+ */
-            animation: otherOrbit $otherTime linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */  
-}
-
-.otherOrbit{
-  width: 880px;
-    height: 880px;
-    position: absolute;
-    top: 30px;
-    left: 337px;
-  
-    border: 2px solid $mediumGray;
-    border-radius: 753px;
-}
+    .orbitHover{
+        border: 2px dotted $blue !important;
+    }
 
 
-.orbitHover{
-    border: 2px dotted $blue !important;
-}
+    
+
+    @-webkit-keyframes phpOrbit {
+        from { -webkit-transform: rotate($rf1) translateX($txf) rotate($rf2); }
+        to   { -webkit-transform: rotate($rt1) translateX($txt) rotate($rt2); }
+    }
+
+    @-moz-keyframes phpOrbit {
+        from { -moz-transform: rotate($rf1) translateX($txf) rotate($rf2); }
+        to   { -moz-transform: rotate($rt1) translateX($txt) rotate($rt2); }
+    }
+
+
+    @-o-keyframes phpOrbit {
+        from { -o-transform: rotate($rf1) translateX($txf) rotate($rf2); }
+        to   { -o-transform: rotate($rt1) translateX($txt) rotate($rt2); }
+    }
+
+
+    @keyframes phpOrbit {
+        from { transform: rotate($rf1) translateX($txf) rotate($rf2); }
+        to   { transform: rotate($rt1) translateX($txt) rotate($rt2); }
+    }
 
 
 
 
-$rf1:0deg;
-$txf:120px;
-$rf2:0deg;
-$rt1:360deg;
-$txt:120px;
-$rt2:-360deg;
+    @-webkit-keyframes pythonOrbit {
+        from { -webkit-transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
+        to   { -webkit-transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
+    }
 
-$pythonrf1:-180deg;
-$pythontxf:225px;
-$pythonrf2:180deg;
-
-$pythonrt1:180deg;
-$pythontxt:225px;
-$pythonrt2:-180deg;
-
-$magentorf1:-90deg;
-$magentotxf:330px; 
-$magentorf2:90deg;
-
-$magentort1:270deg;
-$magentotxt:330px;
-$magentort2:-270deg;
-
-$otherrf1:-270deg;
-$othertxf:435px;
-$otherrf2:270deg;
-
-$otherrt1:90deg;
-$othertxt:435px;
-$otherrt2:-90deg;
-
-@-webkit-keyframes phpOrbit {
-    from { -webkit-transform: rotate($rf1) translateX($txf) rotate($rf2); }
-    to   { -webkit-transform: rotate($rt1) translateX($txt) rotate($rt2); }
-}
-
-@-moz-keyframes phpOrbit {
-    from { -moz-transform: rotate($rf1) translateX($txf) rotate($rf2); }
-    to   { -moz-transform: rotate($rt1) translateX($txt) rotate($rt2); }
-}
+    @-moz-keyframes pythonOrbit {
+        from { -moz-transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
+        to   { -moz-transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
+    }
 
 
-@-o-keyframes phpOrbit {
-    from { -o-transform: rotate($rf1) translateX($txf) rotate($rf2); }
-    to   { -o-transform: rotate($rt1) translateX($txt) rotate($rt2); }
-}
+    @-o-keyframes pythonOrbit {
+        from { -o-transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
+        to   { -o-transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
+    }
 
 
-@keyframes phpOrbit {
-    from { transform: rotate($rf1) translateX($txf) rotate($rf2); }
-    to   { transform: rotate($rt1) translateX($txt) rotate($rt2); }
-}
+    @keyframes pythonOrbit {
+        from { transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
+        to   { transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
+    }
 
 
 
 
-@-webkit-keyframes pythonOrbit {
-    from { -webkit-transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
-    to   { -webkit-transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
-}
+    @-webkit-keyframes magentoOrbit {
+        from { -webkit-transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
+        to   { -webkit-transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
+    }
 
-@-moz-keyframes pythonOrbit {
-    from { -moz-transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
-    to   { -moz-transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
-}
-
-
-@-o-keyframes pythonOrbit {
-    from { -o-transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
-    to   { -o-transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
-}
+    @-moz-keyframes magentoOrbit {
+        from { -moz-transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
+        to   { -moz-transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
+    }
 
 
-@keyframes pythonOrbit {
-    from { transform: rotate($pythonrf1) translateX($pythontxf) rotate($pythonrf2); }
-    to   { transform: rotate($pythonrt1) translateX($pythontxt) rotate($pythonrt2); }
-}
+    @-o-keyframes magentoOrbit {
+        from { -o-transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
+        to   { -o-transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
+    }
 
 
-
-
-@-webkit-keyframes magentoOrbit {
-    from { -webkit-transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
-    to   { -webkit-transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
-}
-
-@-moz-keyframes magentoOrbit {
-    from { -moz-transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
-    to   { -moz-transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
-}
-
-
-@-o-keyframes magentoOrbit {
-    from { -o-transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
-    to   { -o-transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
-}
-
-
-@keyframes magentoOrbit {
-    from { transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
-    to   { transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
-}
+    @keyframes magentoOrbit {
+        from { transform: rotate($magentorf1) translateX($magentotxf) rotate($magentorf2); }
+        to   { transform: rotate($magentort1) translateX($magentotxt) rotate($magentort2); }
+    }
 
 
 
 
 
-@-webkit-keyframes otherOrbit {
-    from { -webkit-transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
-    to   { -webkit-transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
-}
+    @-webkit-keyframes otherOrbit {
+        from { -webkit-transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
+        to   { -webkit-transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
+    }
 
-@-moz-keyframes otherOrbit {
-    from { -moz-transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
-    to   { -moz-transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
-}
-
-
-@-o-keyframes otherOrbit {
-    from { -o-transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
-    to   { -o-transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
-}
+    @-moz-keyframes otherOrbit {
+        from { -moz-transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
+        to   { -moz-transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
+    }
 
 
-@keyframes otherOrbit {
-    from { transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
-    to   { transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
-}
+    @-o-keyframes otherOrbit {
+        from { -o-transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
+        to   { -o-transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
+    }
+
+
+    @keyframes otherOrbit {
+        from { transform: rotate($otherrf1) translateX($othertxf) rotate($otherrf2); }
+        to   { transform: rotate($otherrt1) translateX($othertxt) rotate($otherrt2); }
+    }
 
 }  

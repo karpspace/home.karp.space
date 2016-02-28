@@ -4,16 +4,28 @@
   border: 4px solid;
   border-radius: 100%; }
 
+.bold {
+  font-weight: bold; }
+
 body {
   overflow: hidden; }
 
-@media (min-width: 118.75em) {
+.container {
+  display: table;
+  height: 100vh;
+  width: 100vw; }
+
+.content {
+  display: table-cell;
+  vertical-align: middle; }
+
+@media (min-width: 106.25em) {
   nav {
     width: 300px;
     position: fixed;
     right: 10px;
     top: 350px;
-    z-index: 100; }
+    z-index: 1000; }
     nav ul {
       width: 280px;
       margin: 0 auto;
@@ -51,13 +63,14 @@ body {
     color: #F1F2F2; }
     .blue:hover {
       font-weight: bold; } }
-@media (min-width: 75em) and (max-width: 118.74em) {
+@media (min-width: 75em) and (max-width: 106.24em) {
   nav {
     width: 300px;
     position: fixed;
+    top: 40vh;
+    bottom: 0;
     right: 10px;
-    top: 220px;
-    z-index: 100; }
+    z-index: 1100; }
     nav ul {
       width: 280px;
       margin: 0 auto;
@@ -132,18 +145,17 @@ body {
   background-color: #F1F2F2;
   height: 100vh; }
 
-@media (min-width: 118.75em) {
+@media (min-width: 106.25em) {
   .webDevContainer {
-    width: 1600px;
+    width: 900px;
     height: 900px;
     margin: 0 auto;
     position: relative; }
 
   .webDevText {
     position: absolute;
-    top: 410px;
-    left: 720px;
-    font-size: 50px;
+    top: 405px;
+    left: 385px;
     /* border:2px solid black;
      border-radius: 100px;
      height: 32vh;
@@ -155,9 +167,10 @@ body {
       font-family: "Quicksand", Helvetica, Sans-Serif;
       margin: 0;
       padding: 0;
-      font-size: 50px;
+      font-size: 55px;
       margin-bottom: -20px;
-      color: #1c75bc; }
+      color: #1c75bc;
+      line-height: 1.2; }
 
   .webdevLinkModal {
     cursor: pointer;
@@ -170,44 +183,43 @@ body {
     background-color: #F1F2F2;
     font-size: 4vh;
     position: absolute;
-    top: 20px;
-    left: 737px;
+    left: 405px;
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
-    top: 447px;
-    -webkit-animation: phpOrbit 80s linear infinite;
+    top: 430px;
+    -webkit-animation: phpOrbit 800s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: phpOrbit 80s linear infinite;
+    -moz-animation: phpOrbit 800s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: phpOrbit 80s linear infinite;
+    -o-animation: phpOrbit 800s linear infinite;
     /* Opera 12+ */
-    animation: phpOrbit 80s linear infinite;
+    animation: phpOrbit 800s linear infinite;
     /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */ }
 
   .phpOrbit {
     width: 250px;
     height: 250px;
     position: absolute;
-    top: 348px;
-    left: 646px;
+    top: 330px;
+    left: 315px;
     border: 2px solid #bcbec0;
     border-radius: 130px; }
 
   .python {
     font-family: "Quicksand", Helvetica, Sans-Serif;
     position: absolute;
-    left: 723px;
+    left: 400px;
     text-transform: uppercase;
-    top: 460px;
+    top: 440px;
     background-color: #F1F2F2;
     font-size: 20px;
-    -webkit-animation: pythonOrbit 80s linear infinite;
+    -webkit-animation: pythonOrbit 800s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: pythonOrbit 80s linear infinite;
+    -moz-animation: pythonOrbit 800s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: pythonOrbit 80s linear infinite;
+    -o-animation: pythonOrbit 800s linear infinite;
     /* Opera 12+ */
-    animation: pythonOrbit 80s linear infinite;
+    animation: pythonOrbit 800s linear infinite;
           /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -215,8 +227,8 @@ IE 10+, Safari 5 */ }
     width: 440px;
     height: 440px;
     position: absolute;
-    top: 252px;
-    left: 551px;
+    top: 228px;
+    left: 220px;
     border: 2px solid #bcbec0;
     border-radius: 753px; }
 
@@ -224,26 +236,26 @@ IE 10+, Safari 5 */ }
     background-color: #F1F2F2;
     font-size: 2vh;
     position: absolute;
-    left: 720px;
+    left: 390px;
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
-    top: 455px;
-    -webkit-animation: magentoOrbit 80s linear infinite;
+    top: 430px;
+    -webkit-animation: magentoOrbit 800s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: magentoOrbit 80s linear infinite;
+    -moz-animation: magentoOrbit 800s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: magentoOrbit 80s linear infinite;
+    -o-animation: magentoOrbit 800s linear infinite;
     /* Opera 12+ */
-    animation: magentoOrbit 80s linear infinite;
+    animation: magentoOrbit 800s linear infinite;
             /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
   .magentoOrbit {
-    width: 650px;
-    height: 650px;
+    width: 640px;
+    height: 640px;
     position: absolute;
-    top: 144px;
-    left: 448px;
+    top: 120px;
+    left: 120px;
     border: 2px solid #bcbec0;
     border-radius: 753px; }
 
@@ -251,26 +263,26 @@ IE 10+, Safari 5 */ }
     background-color: #F1F2F2;
     font-size: 3vh;
     position: absolute;
-    left: 713px;
+    left: 383px;
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
-    top: 448px;
-    -webkit-animation: otherOrbit 80s linear infinite;
+    top: 423px;
+    -webkit-animation: otherOrbit 800s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: otherOrbit 80s linear infinite;
+    -moz-animation: otherOrbit 800s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: otherOrbit 80s linear infinite;
+    -o-animation: otherOrbit 800s linear infinite;
     /* Opera 12+ */
-    animation: otherOrbit 80s linear infinite;
+    animation: otherOrbit 800s linear infinite;
         /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
   .otherOrbit {
-    width: 880px;
-    height: 880px;
+    width: 850px;
+    height: 850px;
     position: absolute;
-    top: 30px;
-    left: 337px;
+    top: 12px;
+    left: 16px;
     border: 2px solid #bcbec0;
     border-radius: 753px; }
 
@@ -279,87 +291,96 @@ IE 10+, Safari 5 */ }
 
   @-webkit-keyframes phpOrbit {
     from {
-      -webkit-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+      -webkit-transform: rotate(0deg) translateX(130px) rotate(0deg); }
     to {
-      -webkit-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+      -webkit-transform: rotate(360deg) translateX(130px) rotate(-360deg); } }
   @-moz-keyframes phpOrbit {
     from {
-      -moz-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+      -moz-transform: rotate(0deg) translateX(130px) rotate(0deg); }
     to {
-      -moz-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+      -moz-transform: rotate(360deg) translateX(130px) rotate(-360deg); } }
   @-o-keyframes phpOrbit {
     from {
-      -o-transform: rotate(0deg) translateX(120px) rotate(0deg); }
+      -o-transform: rotate(0deg) translateX(130px) rotate(0deg); }
     to {
-      -o-transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+      -o-transform: rotate(360deg) translateX(130px) rotate(-360deg); } }
   @keyframes phpOrbit {
     from {
-      transform: rotate(0deg) translateX(120px) rotate(0deg); }
+      transform: rotate(0deg) translateX(130px) rotate(0deg); }
     to {
-      transform: rotate(360deg) translateX(120px) rotate(-360deg); } }
+      transform: rotate(360deg) translateX(130px) rotate(-360deg); } }
   @-webkit-keyframes pythonOrbit {
     from {
-      -webkit-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+      -webkit-transform: rotate(-180deg) translateX(220px) rotate(180deg); }
     to {
-      -webkit-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+      -webkit-transform: rotate(180deg) translateX(220px) rotate(-180deg); } }
   @-moz-keyframes pythonOrbit {
     from {
-      -moz-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+      -moz-transform: rotate(-180deg) translateX(220px) rotate(180deg); }
     to {
-      -moz-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+      -moz-transform: rotate(180deg) translateX(220px) rotate(-180deg); } }
   @-o-keyframes pythonOrbit {
     from {
-      -o-transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+      -o-transform: rotate(-180deg) translateX(220px) rotate(180deg); }
     to {
-      -o-transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+      -o-transform: rotate(180deg) translateX(220px) rotate(-180deg); } }
   @keyframes pythonOrbit {
     from {
-      transform: rotate(-180deg) translateX(225px) rotate(180deg); }
+      transform: rotate(-180deg) translateX(220px) rotate(180deg); }
     to {
-      transform: rotate(180deg) translateX(225px) rotate(-180deg); } }
+      transform: rotate(180deg) translateX(220px) rotate(-180deg); } }
   @-webkit-keyframes magentoOrbit {
     from {
-      -webkit-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+      -webkit-transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
-      -webkit-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+      -webkit-transform: rotate(270deg) translateX(320px) rotate(-270deg); } }
   @-moz-keyframes magentoOrbit {
     from {
-      -moz-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+      -moz-transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
-      -moz-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+      -moz-transform: rotate(270deg) translateX(320px) rotate(-270deg); } }
   @-o-keyframes magentoOrbit {
     from {
-      -o-transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+      -o-transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
-      -o-transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+      -o-transform: rotate(270deg) translateX(320px) rotate(-270deg); } }
   @keyframes magentoOrbit {
     from {
-      transform: rotate(-90deg) translateX(330px) rotate(90deg); }
+      transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
-      transform: rotate(270deg) translateX(330px) rotate(-270deg); } }
+      transform: rotate(270deg) translateX(320px) rotate(-270deg); } }
   @-webkit-keyframes otherOrbit {
     from {
-      -webkit-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+      -webkit-transform: rotate(-270deg) translateX(420px) rotate(270deg); }
     to {
-      -webkit-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
+      -webkit-transform: rotate(90deg) translateX(420px) rotate(-90deg); } }
   @-moz-keyframes otherOrbit {
     from {
-      -moz-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+      -moz-transform: rotate(-270deg) translateX(420px) rotate(270deg); }
     to {
-      -moz-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
+      -moz-transform: rotate(90deg) translateX(420px) rotate(-90deg); } }
   @-o-keyframes otherOrbit {
     from {
-      -o-transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+      -o-transform: rotate(-270deg) translateX(420px) rotate(270deg); }
     to {
-      -o-transform: rotate(90deg) translateX(435px) rotate(-90deg); } }
+      -o-transform: rotate(90deg) translateX(420px) rotate(-90deg); } }
   @keyframes otherOrbit {
     from {
-      transform: rotate(-270deg) translateX(435px) rotate(270deg); }
+      transform: rotate(-270deg) translateX(420px) rotate(270deg); }
     to {
-      transform: rotate(90deg) translateX(435px) rotate(-90deg); } } }
-@media (min-width: 75em) and (max-width: 118.74em) {
+      transform: rotate(90deg) translateX(420px) rotate(-90deg); } } }
+@media (min-width: 75em) and (max-width: 106.24em) {
+  .container {
+    display: table;
+    height: 100vh;
+    width: 100vw; }
+
+  .content {
+    display: table-cell;
+    vertical-align: middle; }
+
   .webDevContainer {
-    width: 1000px;
+    width: 600px;
     height: 600px;
     margin: 0 auto;
     position: relative; }
@@ -367,7 +388,7 @@ IE 10+, Safari 5 */ }
   .webDevText {
     position: absolute;
     top: 263px;
-    left: 434px;
+    left: 260px;
     /* border:2px solid black;
      border-radius: 100px;
      height: 32vh;
@@ -394,18 +415,17 @@ IE 10+, Safari 5 */ }
     background-color: #F1F2F2;
     font-size: 4vh;
     position: absolute;
-    top: 20px;
-    left: 451px;
+    left: 265px;
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
-    top: 290px;
-    -webkit-animation: phpOrbit 8s linear infinite;
+    top: 280px;
+    -webkit-animation: phpOrbit 400s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: phpOrbit 8s linear infinite;
+    -moz-animation: phpOrbit 400s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: phpOrbit 8s linear infinite;
+    -o-animation: phpOrbit 400s linear infinite;
     /* Opera 12+ */
-    animation: phpOrbit 8s linear infinite;
+    animation: phpOrbit 400s linear infinite;
     /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */ }
 
   .phpOrbit {
@@ -413,25 +433,25 @@ IE 10+, Safari 5 */ }
     height: 200px;
     position: absolute;
     top: 204px;
-    left: 366px;
-    border: 2px solid #bcbec0;
+    left: 190px;
+    border: 1px solid #bcbec0;
     border-radius: 130px; }
 
   .python {
     font-family: "Quicksand", Helvetica, Sans-Serif;
     position: absolute;
-    left: 430px;
+    left: 260px;
     text-transform: uppercase;
     top: 290px;
     background-color: #F1F2F2;
     font-size: 15px;
-    -webkit-animation: pythonOrbit 8s linear infinite;
+    -webkit-animation: pythonOrbit 400s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: pythonOrbit 8s linear infinite;
+    -moz-animation: pythonOrbit 400s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: pythonOrbit 8s linear infinite;
+    -o-animation: pythonOrbit 400s linear infinite;
     /* Opera 12+ */
-    animation: pythonOrbit 8s linear infinite;
+    animation: pythonOrbit 400s linear infinite;
           /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -440,25 +460,25 @@ IE 10+, Safari 5 */ }
     height: 320px;
     position: absolute;
     top: 143px;
-    left: 305px;
-    border: 2px solid #bcbec0;
+    left: 130px;
+    border: 1px solid #bcbec0;
     border-radius: 753px; }
 
   .magento {
     background-color: #F1F2F2;
     font-size: 2vh;
     position: absolute;
-    left: 434px;
+    left: 260px;
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
     top: 293px;
-    -webkit-animation: magentoOrbit 8s linear infinite;
+    -webkit-animation: magentoOrbit 400s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: magentoOrbit 8s linear infinite;
+    -moz-animation: magentoOrbit 400s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: magentoOrbit 8s linear infinite;
+    -o-animation: magentoOrbit 400s linear infinite;
     /* Opera 12+ */
-    animation: magentoOrbit 8s linear infinite;
+    animation: magentoOrbit 400s linear infinite;
             /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -467,25 +487,25 @@ IE 10+, Safari 5 */ }
     height: 450px;
     position: absolute;
     top: 75px;
-    left: 244px;
-    border: 2px solid #bcbec0;
+    left: 65px;
+    border: 1px solid #bcbec0;
     border-radius: 753px; }
 
   .other {
     background-color: #F1F2F2;
     font-size: 3vh;
     position: absolute;
-    left: 427px;
+    left: 253px;
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
     top: 286px;
-    -webkit-animation: otherOrbit 8s linear infinite;
+    -webkit-animation: otherOrbit 400s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: otherOrbit 8s linear infinite;
+    -moz-animation: otherOrbit 400s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: otherOrbit 8s linear infinite;
+    -o-animation: otherOrbit 400s linear infinite;
     /* Opera 12+ */
-    animation: otherOrbit 8s linear infinite;
+    animation: otherOrbit 400s linear infinite;
         /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -494,8 +514,8 @@ IE 10+, Safari 5 */ }
     height: 570px;
     position: absolute;
     top: 13px;
-    left: 184px;
-    border: 2px solid #bcbec0;
+    left: 4px;
+    border: 1px solid #bcbec0;
     border-radius: 753px; }
 
   .orbitHover {
@@ -583,11 +603,725 @@ IE 10+, Safari 5 */ }
       transform: rotate(90deg) translateX(280px) rotate(-90deg); } } }
 .sysadmin {
   background-color: #1c75bc;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 100;
+  position: relative; }
 
+@media (min-width: 106.25em) {
+  .sysadminContainer {
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative; }
+
+  .circle {
+    cursor: pointer;
+    background-color: #F1F2F2;
+    border: 5px solid #1c75bc;
+    border-radius: 100px;
+    z-index: 100; }
+    .circle:hover {
+      background-color: #1c75bc;
+      border: 5px solid #F1F2F2; }
+
+  .line {
+    background-color: #F1F2F2; }
+
+  .caption {
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    text-transform: uppercase; }
+
+  .frame {
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: white;
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
+    top: 400px;
+    left: 50px;
+    position: absolute;
+    z-index: 100;
+    line-height: 1.3;
+    height: 500px; }
+    .frame p {
+      columns: 3;
+      -webkit-columns: 3;
+      column: 3;
+      height: 220px; }
+
+  .servicesCap {
+    top: 173px;
+    left: 700px; }
+
+  .servicesDot {
+    position: absolute;
+    top: 170px;
+    left: 645px;
+    height: 50px;
+    width: 50px; }
+
+  .adminCap {
+    top: 248px;
+    left: 904px; }
+
+  .cpCap {
+    top: 334px;
+    left: 750px; }
+
+  .cpDot {
+    position: absolute;
+    top: 338px;
+    left: 788px;
+    height: 26px;
+    width: 26px; }
+
+  .cpLine {
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: 308px;
+    left: 785px;
+    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg); }
+
+  .emailDot {
+    position: absolute;
+    top: 266px;
+    left: 575px;
+    height: 26px;
+    width: 26px; }
+
+  .emailLine {
+    height: 2px;
+    width: 110px;
+    position: absolute;
+    top: 240px;
+    left: 570px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg); }
+
+  .mailCap {
+    top: 260px;
+    left: 510px; }
+
+  .httpDot {
+    position: absolute;
+    top: 114px;
+    left: 590px;
+    height: 26px;
+    width: 26px; }
+
+  .httpLine {
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: 159px;
+    left: 586px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); }
+
+  .httpCap {
+    top: 107px;
+    left: 520px; }
+
+  .mySqlDot {
+    position: absolute;
+    top: 27px;
+    left: 659px;
+    height: 26px;
+    width: 26px; }
+
+  .mySqlLine {
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    top: 106px;
+    left: 596px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); }
+
+  .mySqlCap {
+    top: 22px;
+    left: 565px; }
+
+  .ftpDot {
+    position: absolute;
+    top: 35px;
+    left: 840px;
+    height: 26px;
+    width: 26px; }
+
+  .ftpCap {
+    top: 30px;
+    left: 870px; }
+
+  .ftpLine {
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    top: 130px;
+    left: 625px;
+    transform: rotate(-220deg);
+    -webkit-transform: rotate(-220deg);
+    -moz-transform: rotate(-220deg);
+    -o-transform: rotate(-220deg);
+    -ms-transform: rotate(-220deg); }
+
+  .dnsLine {
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    top: 195px;
+    left: 420px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg); }
+
+  .dnsDot {
+    position: absolute;
+    top: 183px;
+    left: 411px;
+    height: 26px;
+    width: 26px; }
+
+  .dnsCap {
+    top: 179px;
+    left: 350px; }
+
+  .adminLine {
+    height: 2px;
+    width: 380px;
+    position: absolute;
+    top: 263px;
+    left: 660px;
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    -ms-transform: rotate(200deg); }
+
+  .adminDot {
+    position: absolute;
+    top: 250px;
+    left: 845px;
+    height: 50px;
+    width: 50px; }
+
+  .securityLine {
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 230px;
+    left: 846px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); }
+
+  .securityCap {
+    top: 184px;
+    left: 885px; }
+
+  .securityDot {
+    position: absolute;
+    top: 190px;
+    left: 858px;
+    height: 26px;
+    width: 26px; }
+
+  .cliLine {
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 283px;
+    left: 860px;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg); }
+
+  .cliDot {
+    position: absolute;
+    top: 294px;
+    left: 896px;
+    height: 26px;
+    width: 26px; }
+
+  .cliCap {
+    top: 315px;
+    left: 865px; }
+
+  .osDot {
+    position: absolute;
+    top: 316px;
+    left: 1010px;
+    height: 26px;
+    width: 26px; }
+
+  .osCap {
+    top: 312px;
+    left: 1040px; } }
+@media (min-width: 75em) and (max-width: 106.24em) {
+  .sysadminContainer {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative; }
+
+  .circle {
+    cursor: pointer;
+    background-color: #F1F2F2;
+    border: 5px solid #1c75bc;
+    border-radius: 100px;
+    z-index: 100; }
+    .circle:hover {
+      background-color: #1c75bc;
+      border: 5px solid #F1F2F2; }
+
+  .line {
+    background-color: #F1F2F2; }
+
+  .caption {
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-transform: uppercase; }
+
+  .frame {
+    pointer-events: none;
+    font-family: "Quicksand", Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: white;
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
+    top: 350px;
+    left: 50px;
+    position: absolute;
+    z-index: 100;
+    line-height: 1.3;
+    height: 200px; }
+    .frame p {
+      columns: 3;
+      -webkit-columns: 3;
+      column: 3;
+      height: 120px; }
+
+  .servicesCap {
+    top: 173px;
+    left: 510px; }
+
+  .servicesDot {
+    position: absolute;
+    top: 170px;
+    left: 455px;
+    height: 50px;
+    width: 50px; }
+
+  .adminCap {
+    top: 248px;
+    left: 714px; }
+
+  .cpCap {
+    top: 334px;
+    left: 560px; }
+
+  .cpDot {
+    position: absolute;
+    top: 338px;
+    left: 598px;
+    height: 26px;
+    width: 26px; }
+
+  .cpLine {
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: 308px;
+    left: 595px;
+    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg); }
+
+  .emailDot {
+    position: absolute;
+    top: 266px;
+    left: 385px;
+    height: 26px;
+    width: 26px; }
+
+  .emailLine {
+    height: 2px;
+    width: 110px;
+    position: absolute;
+    top: 240px;
+    left: 380px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg); }
+
+  .mailCap {
+    top: 264px;
+    left: 335px; }
+
+  .httpDot {
+    position: absolute;
+    top: 114px;
+    left: 400px;
+    height: 26px;
+    width: 26px; }
+
+  .httpLine {
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: 159px;
+    left: 396px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); }
+
+  .httpCap {
+    top: 110px;
+    left: 340px; }
+
+  .mySqlDot {
+    position: absolute;
+    top: 27px;
+    left: 469px;
+    height: 26px;
+    width: 26px; }
+
+  .mySqlLine {
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    top: 106px;
+    left: 406px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); }
+
+  .mySqlCap {
+    top: 23px;
+    left: 395px; }
+
+  .ftpDot {
+    position: absolute;
+    top: 35px;
+    left: 650px;
+    height: 26px;
+    width: 26px; }
+
+  .ftpCap {
+    top: 30px;
+    left: 680px; }
+
+  .ftpLine {
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    top: 130px;
+    left: 435px;
+    transform: rotate(-220deg);
+    -webkit-transform: rotate(-220deg);
+    -moz-transform: rotate(-220deg);
+    -o-transform: rotate(-220deg);
+    -ms-transform: rotate(-220deg); }
+
+  .dnsLine {
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    top: 195px;
+    left: 230px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg); }
+
+  .dnsDot {
+    position: absolute;
+    top: 183px;
+    left: 221px;
+    height: 26px;
+    width: 26px; }
+
+  .dnsCap {
+    top: 181px;
+    left: 170px; }
+
+  .adminLine {
+    height: 2px;
+    width: 380px;
+    position: absolute;
+    top: 263px;
+    left: 470px;
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    -ms-transform: rotate(200deg); }
+
+  .adminDot {
+    position: absolute;
+    top: 250px;
+    left: 655px;
+    height: 50px;
+    width: 50px; }
+
+  .securityLine {
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 230px;
+    left: 656px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); }
+
+  .securityCap {
+    top: 184px;
+    left: 695px; }
+
+  .securityDot {
+    position: absolute;
+    top: 190px;
+    left: 668px;
+    height: 26px;
+    width: 26px; }
+
+  .cliLine {
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 283px;
+    left: 670px;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg); }
+
+  .cliDot {
+    position: absolute;
+    top: 294px;
+    left: 706px;
+    height: 26px;
+    width: 26px; }
+
+  .cliCap {
+    top: 315px;
+    left: 675px; }
+
+  .osDot {
+    position: absolute;
+    top: 316px;
+    left: 820px;
+    height: 26px;
+    width: 26px; }
+
+  .osCap {
+    top: 312px;
+    left: 850px; } }
 .exp {
   background-color: #414042;
   height: 100vh; }
+
+.expContainer {
+  height: 100vh;
+  width: 1600px;
+  position: relative; }
+
+.amcsOrbit {
+  border: 2px solid #F1F2F2;
+  border-radius: 10000px;
+  height: 3000px;
+  width: 3000px;
+  position: absolute;
+  top: -1000px;
+  left: 100px;
+  z-index: 1; }
+
+.asusOrbit {
+  border: 2px solid #F1F2F2;
+  border-radius: 10000px;
+  height: 3000px;
+  width: 3000px;
+  position: absolute;
+  top: -1000px;
+  left: 500px;
+  z-index: 1; }
+
+.hatorOrbit {
+  border: 2px solid #F1F2F2;
+  border-radius: 10000px;
+  height: 3000px;
+  width: 3000px;
+  position: absolute;
+  top: -1000px;
+  left: 850px;
+  z-index: 1; }
+
+.paradowskiOrbit {
+  border: 2px solid #F1F2F2;
+  border-radius: 10000px;
+  height: 3000px;
+  width: 3000px;
+  position: absolute;
+  top: -1000px;
+  left: 1200px;
+  z-index: 1; }
+
+.freelanceOrbit {
+  border: 2px dashed #F1F2F2;
+  border-radius: 10000px;
+  height: 5000px;
+  width: 5000px;
+  position: absolute;
+  top: 78px;
+  left: -1440px;
+  z-index: 1;
+  pointer-events: none; }
+
+.amcsObject {
+  position: absolute;
+  top: 586px;
+  left: 63px;
+  height: 80px;
+  width: 80px;
+  background-color: #F1F2F2;
+  border-radius: 300px;
+  z-index: 1000; }
+
+.amcsText {
+  top: 400px;
+  left: 180px; }
+  .amcsText h1 {
+    font-size: 80px; }
+
+.asusText {
+  top: 400px;
+  left: 580px; }
+  .asusText h1 {
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.hatorText {
+  top: 400px;
+  left: 920px; }
+  .hatorText h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    margin-top: 18px; }
+
+.paradowskiText {
+  top: 400px;
+  left: 1260px; }
+  .paradowskiText h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-top: 30px; }
+
+.asusObject {
+  position: absolute;
+  top: 216px;
+  left: 482px;
+  height: 80px;
+  width: 80px;
+  background-color: #F1F2F2;
+  border-radius: 300px;
+  z-index: 1000; }
+
+.hatorObject {
+  position: absolute;
+  top: 806px;
+  left: 862px;
+  height: 50px;
+  width: 50px;
+  background-color: #F1F2F2;
+  border-radius: 300px;
+  z-index: 1000; }
+
+.paradowskiObject {
+  position: absolute;
+  top: 276px;
+  left: 1196px;
+  height: 40px;
+  width: 40px;
+  background-color: #F1F2F2;
+  border-radius: 300px;
+  z-index: 1000; }
+
+.expText {
+  z-index: 1000;
+  font-family: "Quicksand", Helvetica, Sans-Serif;
+  position: absolute;
+  color: lightGray; }
+  .expText h1, .expText h2 {
+    font-family: "Quicksand", Helvetica, Sans-Serif; }
+  .expText p {
+    margin-top: -10px; }
+  .expText h2 {
+    margin-top: -40px;
+    font-size: 39px; }
+  .expText h1 {
+    text-transform: uppercase; }
+  .expText p {
+    border-top: 2px solid #F1F2F2;
+    padding: 10px 0px;
+    font-size: 20px; }
+  .expText span {
+    font-size: 15px;
+    display: block; }
+
+.moreInfoButton {
+  z-index: 1000;
+  cursor: pointer;
+  width: 145px;
+  text-align: center;
+  font-family: "Quicksand", Helvetica, Sans-Serif;
+  border: 1px solid #F1F2F2;
+  padding: 5px; }
+  .moreInfoButton:hover {
+    background-color: #F1F2F2;
+    color: #414042; }
+
+.expColor {
+  background-color: yellow !important; }
 
 .about {
   background-color: #F1F2F2;
