@@ -232,7 +232,7 @@ IE 10+, Safari 5 */ }
     border: 2px solid #bcbec0;
     border-radius: 753px; }
 
-  .magento {
+  .frontend {
     background-color: #F1F2F2;
     font-size: 2vh;
     position: absolute;
@@ -240,17 +240,17 @@ IE 10+, Safari 5 */ }
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
     top: 430px;
-    -webkit-animation: magentoOrbit 800s linear infinite;
+    -webkit-animation: frontendOrbit 800s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: magentoOrbit 800s linear infinite;
+    -moz-animation: frontendOrbit 800s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: magentoOrbit 800s linear infinite;
+    -o-animation: frontendOrbit 800s linear infinite;
     /* Opera 12+ */
-    animation: magentoOrbit 800s linear infinite;
-            /* Chrome, Firefox 16+, 
+    animation: frontendOrbit 800s linear infinite;
+              /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
-  .magentoOrbit {
+  .frontendOrbit {
     width: 640px;
     height: 640px;
     position: absolute;
@@ -329,22 +329,22 @@ IE 10+, Safari 5 */ }
       transform: rotate(-180deg) translateX(220px) rotate(180deg); }
     to {
       transform: rotate(180deg) translateX(220px) rotate(-180deg); } }
-  @-webkit-keyframes magentoOrbit {
+  @-webkit-keyframes frontendOrbit {
     from {
       -webkit-transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
       -webkit-transform: rotate(270deg) translateX(320px) rotate(-270deg); } }
-  @-moz-keyframes magentoOrbit {
+  @-moz-keyframes frontendOrbit {
     from {
       -moz-transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
       -moz-transform: rotate(270deg) translateX(320px) rotate(-270deg); } }
-  @-o-keyframes magentoOrbit {
+  @-o-keyframes frontendOrbit {
     from {
       -o-transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
       -o-transform: rotate(270deg) translateX(320px) rotate(-270deg); } }
-  @keyframes magentoOrbit {
+  @keyframes frontendOrbit {
     from {
       transform: rotate(-90deg) translateX(320px) rotate(90deg); }
     to {
@@ -369,16 +369,54 @@ IE 10+, Safari 5 */ }
       transform: rotate(-270deg) translateX(420px) rotate(270deg); }
     to {
       transform: rotate(90deg) translateX(420px) rotate(-90deg); } }
-  .webdevModal .phpSlider {
-    height: 800px; }
-    .webdevModal .phpSlider .slick-slide {
-      background-color: red;
-      height: 720px; }
-  .webdevModal .phpList li {
-    list-style: none;
-    display: inline;
-    font-family: "Quicksand", Helvetica, Sans-Serif;
-    font-size: 20px; } }
+  .webdevModal {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    z-index: 10000000;
+    display: none;
+    padding-top: 6vh;
+    top: 0px;
+    left: 0px; }
+    .webdevModal .sliderControls {
+      margin-top: 20px;
+      font-size: 60px;
+      color: #bcbec0; }
+      .webdevModal .sliderControls div {
+        padding: 0px 20px;
+        cursor: pointer;
+        display: inline-block; }
+        .webdevModal .sliderControls div:hover {
+          color: #414042; }
+    .webdevModal .slick-slide {
+      height: 600px; }
+    .webdevModal .exitIcon {
+      font-size: 3em;
+      position: fixed;
+      top: 8vh;
+      right: 10vw;
+      color: #bcbec0;
+      cursor: pointer; }
+      .webdevModal .exitIcon:hover {
+        color: #414042; }
+    .webdevModal .menu {
+      margin: 0;
+      margin-bottom: 40px; }
+      .webdevModal .menu li {
+        list-style: none;
+        display: inline;
+        font-family: "Quicksand", Helvetica, Sans-Serif;
+        font-size: 20px;
+        padding: 0 20px;
+        cursor: pointer; }
+        .webdevModal .menu li:first-child {
+          padding: 20px 0 0 0; }
+        .webdevModal .menu li:hover {
+          font-weight: bolder; }
+      .webdevModal .menu .active {
+        color: #414042;
+        font-weight: bolder; } }
 @media (min-width: 75em) and (max-width: 106.24em) {
   .container {
     display: table;
@@ -474,7 +512,7 @@ IE 10+, Safari 5 */ }
     border: 1px solid #bcbec0;
     border-radius: 753px; }
 
-  .magento {
+  .frontend {
     background-color: #F1F2F2;
     font-size: 2vh;
     position: absolute;
@@ -482,17 +520,17 @@ IE 10+, Safari 5 */ }
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
     top: 293px;
-    -webkit-animation: magentoOrbit 400s linear infinite;
+    -webkit-animation: frontendOrbit 400s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: magentoOrbit 400s linear infinite;
+    -moz-animation: frontendOrbit 400s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: magentoOrbit 400s linear infinite;
+    -o-animation: frontendOrbit 400s linear infinite;
     /* Opera 12+ */
-    animation: magentoOrbit 400s linear infinite;
-            /* Chrome, Firefox 16+, 
+    animation: frontendOrbit 400s linear infinite;
+              /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
-  .magentoOrbit {
+  .frontendOrbit {
     width: 450px;
     height: 450px;
     position: absolute;
@@ -571,22 +609,22 @@ IE 10+, Safari 5 */ }
       transform: rotate(-180deg) translateX(160px) rotate(180deg); }
     to {
       transform: rotate(180deg) translateX(160px) rotate(-180deg); } }
-  @-webkit-keyframes magentoOrbit {
+  @-webkit-keyframes frontendOrbit {
     from {
       -webkit-transform: rotate(-90deg) translateX(220px) rotate(90deg); }
     to {
       -webkit-transform: rotate(270deg) translateX(220px) rotate(-270deg); } }
-  @-moz-keyframes magentoOrbit {
+  @-moz-keyframes frontendOrbit {
     from {
       -moz-transform: rotate(-90deg) translateX(220px) rotate(90deg); }
     to {
       -moz-transform: rotate(270deg) translateX(220px) rotate(-270deg); } }
-  @-o-keyframes magentoOrbit {
+  @-o-keyframes frontendOrbit {
     from {
       -o-transform: rotate(-90deg) translateX(220px) rotate(90deg); }
     to {
       -o-transform: rotate(270deg) translateX(220px) rotate(-270deg); } }
-  @keyframes magentoOrbit {
+  @keyframes frontendOrbit {
     from {
       transform: rotate(-90deg) translateX(220px) rotate(90deg); }
     to {
@@ -610,7 +648,55 @@ IE 10+, Safari 5 */ }
     from {
       transform: rotate(-270deg) translateX(280px) rotate(270deg); }
     to {
-      transform: rotate(90deg) translateX(280px) rotate(-90deg); } } }
+      transform: rotate(90deg) translateX(280px) rotate(-90deg); } }
+  .webdevModal {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    z-index: 10000000;
+    display: none;
+    padding-top: 6vh;
+    top: 0px;
+    left: 0px; }
+    .webdevModal .sliderControls {
+      margin-top: 20px;
+      font-size: 40px;
+      color: #bcbec0; }
+      .webdevModal .sliderControls div {
+        padding: 0px 20px;
+        cursor: pointer;
+        display: inline-block; }
+        .webdevModal .sliderControls div:hover {
+          color: #414042; }
+    .webdevModal .slick-slide {
+      height: 300px; }
+    .webdevModal .exitIcon {
+      font-size: 26px;
+      position: fixed;
+      top: 8vh;
+      right: 10vw;
+      color: #bcbec0;
+      cursor: pointer; }
+      .webdevModal .exitIcon:hover {
+        color: #414042; }
+    .webdevModal .menu {
+      margin: 0;
+      margin-bottom: 40px; }
+      .webdevModal .menu li {
+        list-style: none;
+        display: inline;
+        font-family: "Quicksand", Helvetica, Sans-Serif;
+        font-size: 18px;
+        padding: 0 20px;
+        cursor: pointer; }
+        .webdevModal .menu li:first-child {
+          padding: 20px 0 0 0; }
+        .webdevModal .menu li:hover {
+          font-weight: bolder; }
+      .webdevModal .menu .active {
+        color: #414042;
+        font-weight: bolder; } }
 .sysadmin {
   background-color: #1c75bc;
   height: 100vh;

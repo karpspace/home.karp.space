@@ -55,15 +55,15 @@
         <div class="webDevContainer">
           <div class="phpOrbit"></div>
           <div class="pythonOrbit"></div>
-          <div class="magentoOrbit"></div>
+          <div class="frontendOrbit"></div>
           <div class="otherOrbit"></div>
           <div class="webDevText">
-          <h1>web</h1>
+            <h1>web</h1>
             <h1>dev</h1>
           </div>
          <h2 class="php webdevLinkModal"      data-open="phpModal"     data-name="php">php</h2>
            <h2 class="python webdevLinkModal" data-open="pythonModal"  data-name="python">python</h2> 
-         <h2 class="magento webdevLinkModal"  data-open="magentoModal" data-name="magento">magento</h2>
+         <h2 class="frontend webdevLinkModal"  data-open="frontendModal" data-name="frontend">frontend</h2>
         <h2 class="other webdevLinkModal"     data-open="otherModal"   data-name="other">other</h2> 
         </div>
       </div>
@@ -176,10 +176,10 @@
       <!-- WebDev -->
      
       <!-- Php -->
-      <div class="reveal full webdevModal" id="phpModal" data-reveal  data-animation-in="fade-in" data-animation-out="fade-out">
-        <div class="row">
-          <div class="small-12 columns">
-            <ul class="phpList">
+      <div class="webdevModal" id="phpModal">
+        <div class="row expanded">
+          <div class="small-10 small-offset-1 columns">
+            <ul class="phpList menu">
               <li>Employer Maneger</li> 
               <li>AMCS Control Panel</li>
               <li>LendMe</li>
@@ -188,25 +188,128 @@
           </div>
         </div>
         <div class="row expanded">
-          <div class="small-12 columns">
+          <div class="small-offset-1 small-10 columns">
             <div class="phpSlider">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+                <div>1 Lorem Ipsum</div>
+                <div>2 Lorem Ipsum</div>
+                <div>3 Lorem Ipsum</div>
+                <div>4 Lorem Ipsum</div>
+                <div>5 Lorem Ipsum</div>
+                <div>6 Lorem Ipsum</div>
+
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="small-12 columns">
-            <div class="sliderControls">Controls</div>
+        <div class="row expanded">
+          <div class="small-offset-1 small-10 columns">
+            <div class="sliderControls"> 
+              <div class="prevWebDev"><i class="fa fa-arrow-left"></i></div>
+              <div class="nextWebDev"><i class="fa fa-arrow-right"></i></div>
+            </div>
           </div>
         </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <i class="fa fa-times exitIcon"></i>
       </div> 
 
       <!-- Python -->
+      <div class="webdevModal" id="pythonModal">
+        <div class="row expanded">
+          <div class="small-10 small-offset-1 columns">
+            <ul class="pythonList menu">
+              <li>Intro</li> 
+              <li>LogMe</li> 
+              <li>SysCheck</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row expanded">
+          <div class="small-offset-1 small-10 columns">
+            <div class="pythonSlider">
+                <div>1 Lorem Ipsum</div>
+                <div>2 Lorem Ipsum</div>
+                <div>3 Lorem Ipsum</div>
+                <div>4 Lorem Ipsum</div>
+                <div>5 Lorem Ipsum</div>
+                <div>6 Lorem Ipsum</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row expanded">
+          <div class="small-offset-1 small-10 columns">
+            <div class="sliderControls"> 
+              <div class="prevWebDev"><i class="fa fa-arrow-left"></i></div>
+              <div class="nextWebDev"><i class="fa fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <i class="fa fa-times exitIcon"></i>
+      </div> 
+
+
+      <!-- Frontend -->
+
+      <div class="webdevModal" id="frontendModal">
+        <div class="row expanded">
+          <div class="small-10 small-offset-1 columns">
+            <ul class="frontendList menu">
+              <li>Intro</li> 
+              <li>Apache Log Generator</li> 
+              <li>Permission Generator</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row expanded">
+          <div class="small-offset-1 small-10 columns">
+            <div class="frontendSlider">
+                <div>1 Lorem Ipsum</div>
+                <div>2 Lorem Ipsum</div>
+            </div>
+          </div>
+        </div>
+        <div class="row expanded">
+          <div class="small-offset-1 small-10 columns">
+            <div class="sliderControls"> 
+              <div class="prevWebDev"><i class="fa fa-arrow-left"></i></div>
+              <div class="nextWebDev"><i class="fa fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <i class="fa fa-times exitIcon"></i>
+      </div> 
+
+      <!-- Other -->
+
+      <div class="webdevModal" id="otherModal">
+        <div class="row expanded">
+          <div class="small-10 small-offset-1 columns">
+            <ul class="otherList menu">
+              <li>Intro</li> 
+              <li>Apache Log Generator</li> 
+              <li>Permission Generator</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row expanded">
+          <div class="small-offset-1 small-10 columns">
+            <div class="otherSlider">
+                <div>1 Lorem Ipsum</div>
+                <div>2 Lorem Ipsum</div>
+            </div>
+          </div>
+        </div>
+        <div class="row expanded">
+          <div class="small-offset-1 small-10 columns">
+            <div class="sliderControls"> 
+              <div class="prevWebDev"><i class="fa fa-arrow-left"></i></div>
+              <div class="nextWebDev"><i class="fa fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <i class="fa fa-times exitIcon"></i>
+      </div> 
+
+      <!-- Python 
       <div class="reveal full webdevModal" id="pythonModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
         <div class="row">
           <div class="small-12 columns">
@@ -218,7 +321,7 @@
         </button>
       </div> 
       
-      <!-- Magento -->
+      <!-- Magento 
       <div class="reveal full webdevModal" id="magentoModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
         <div class="row">
           <div class="small-12 columns">
@@ -230,7 +333,7 @@
         </button>
       </div> 
 
-      <!-- Others -->
+      <!-- Others
       <div class="reveal full webdevModal" id="otherModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
         <div class="row">
           <div class="small-12 columns">
@@ -243,7 +346,7 @@
       </div> 
 
 
-
+ -->
 
 
 

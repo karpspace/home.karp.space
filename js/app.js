@@ -1,6 +1,37 @@
 var orbitCheck = 0;
 //To Do
 
+
+	function checkSlide(type){
+		currentSlide = $("."+type+"Slider").slick("slickCurrentSlide");
+		$("."+type+"List li").removeClass("active");
+		$("."+type+"List li:nth-child("+(currentSlide+1)+")").addClass("active");
+		console.log(currentSlide);
+	}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function menuClick(page){
 	
 	$("nav").fadeIn();
@@ -53,7 +84,7 @@ $(document).ready(function(){
 		$("nav").fadeOut();
 	});
 
-	$(".close-button").click(function(){
+	$(".exitIcon").click(function(){
 		$("nav").fadeIn();
 	});
 
@@ -75,11 +106,11 @@ $(document).ready(function(){
 				 				$(".python").mouseenter();
 				 				
 				 				setTimeout(function(){
-				 					$(".magento").mouseenter();
+				 					$(".frontend").mouseenter();
 				 					$(".python").mouseleave();
 				 					setTimeout(function(){
 				 						$(".other").mouseenter();
-				 						$(".magento").mouseleave();
+				 						$(".frontend").mouseleave();
 				 						setTimeout(function(){
 					 						$(".other").mouseleave();
 				 						},500)
@@ -180,19 +211,128 @@ $(document).ready(function(){
 
 
 
-
-
-
 	//Webdev View
-
+///
 	$(".php").click(function(){
-		$('.phpSlider').slick();
+		
+		$('#phpModal').fadeIn();
+		
 	});
+	
+
+
+
+
+
+
+
+	//PHP modal
+
+
+	$(".phpSlider").slick({   
+		prevArrow: $('.prevWebDev'),
+        nextArrow: $('.nextWebDev'),
+        fade:true
+    });
+
+
+    $('.phpSlider').on('afterChange', function(event, slick, direction){
+  		checkSlide("php");
+	});
+	
+
+	$(".phpList li").click(function(){
+		$(".phpSlider").slick("slickGoTo", $(this).index());   
+	});
+
+
+
+  //Python Modal
+
+	$(".python").click(function(){
+		
+		$('#pythonModal').fadeIn();
+		
+	});
+
+		$(".pythonSlider").slick({   
+		prevArrow: $('.prevWebDev'),
+        nextArrow: $('.nextWebDev'),
+        fade:true
+    });
+
+
+    $('.pythonSlider').on('afterChange', function(event, slick, direction){
+  		checkSlide("python");
+  		console.log("test");
+	});
+	
+
+	$(".pythonList li").click(function(){
+		//console.log($(this).index());
+		$(".pythonSlider").slick("slickGoTo", $(this).index());   
+	});
+
+	//Frontend Modal
+		$(".frontend").click(function(){
+		
+		$('#frontendModal').fadeIn();
+		
+	});
+
+		$(".frontendSlider").slick({   
+		prevArrow: $('.prevWebDev'),
+        nextArrow: $('.nextWebDev'),
+        fade:true
+    });
+
+
+    $('.frontendSlider').on('afterChange', function(event, slick, direction){
+  		checkSlide("python");
+  		console.log("test");
+	});
+	
+
+	$(".frontendList li").click(function(){
+		$(".frontendSlider").slick("slickGoTo", $(this).index());   
+	}); 
+
+	//Other Modal
+		$(".other").click(function(){
+		
+		$('#otherModal').fadeIn();
+		
+	});
+
+		$(".otherSlider").slick({   
+		prevArrow: $('.prevWebDev'),
+        nextArrow: $('.nextWebDev'),
+        fade:true
+    });
+
+
+    $('.otherSlider').on('afterChange', function(event, slick, direction){
+  		checkSlide("python");
+  		console.log("test");
+	});
+	
+
+	$(".otherList li").click(function(){
+		$(".otherSlider").slick("slickGoTo", $(this).index());   
+	}); 
+
+
+
+
+
+
+
+
 
 	$(".webdevLinkModal").mouseenter(function(){
 		$(".phpOrbit").removeClass(".orbitHover");
 		$(".pythonOrbit").removeClass(".orbitHover");
-		$(".magentoOrbit").removeClass(".orbitHover");
+		$(".frontendOrbit").removeClass(".orbitHover");
 		name = $(this).attr("data-name");
 		$("."+name+"Orbit").addClass("orbitHover");
 	});
@@ -202,7 +342,7 @@ $(document).ready(function(){
 		$("."+name+"Orbit").removeClass("orbitHover");
 	});
 
-
-
-
+	$(".exitIcon").click(function(){
+		$(".webdevModal").fadeOut();
+	});
 });
