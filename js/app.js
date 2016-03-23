@@ -205,6 +205,11 @@ $(document).ready(function(){
 	$(".php").click(function(){
 		
 		$('#phpModal').fadeIn();
+		$(".phpSlider").slick({   
+			prevArrow: $('.prevWebDev'),
+	        nextArrow: $('.nextWebDev'),
+	        fade:true
+    	});
 		
 	});
 	
@@ -218,11 +223,7 @@ $(document).ready(function(){
 	//PHP modal
 
 
-	$(".phpSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
-        fade:true
-    });
+	
 
 
     $('.phpSlider').on('afterChange', function(event, slick, direction){
@@ -239,16 +240,15 @@ $(document).ready(function(){
   //Python Modal
 
 	$(".python").click(function(){
-		
 		$('#pythonModal').fadeIn();
-		
+		$(".pythonSlider").slick({   
+			prevArrow: $('.prevWebDev'),
+	        nextArrow: $('.nextWebDev'),
+	        fade:true
+    	});
 	});
 
-		$(".pythonSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
-        fade:true
-    });
+	
 
 
     $('.pythonSlider').on('afterChange', function(event, slick, direction){
@@ -263,17 +263,16 @@ $(document).ready(function(){
 	});
 
 	//Frontend Modal
-		$(".frontend").click(function(){
-		
-		$('#frontendModal').fadeIn();
-		
-	});
+		$(".frontend").click(function(){	
+			$('#frontendModal').fadeIn();
+			$(".frontendSlider").slick({   
+				prevArrow: $('.prevWebDev'),
+        		nextArrow: $('.nextWebDev'),
+        		fade:true
+    		});		
+		});
 
-	$(".frontendSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
-        fade:true
-    });
+
 
 
     $('.frontendSlider').on('afterChange', function(event, slick, direction){
@@ -287,13 +286,16 @@ $(document).ready(function(){
 		}); 
 
 	//Other Modal
-		$(".other").click(function(){
-		
+	$(".other").click(function(){
 		$('#otherModal').fadeIn();
-		
+		$(".otherSlider").slick({   
+			prevArrow: $('.prevWebDev'),
+	        nextArrow: $('.nextWebDev'),
+	        fade:true
+	    });	
 	});
 
-		$(".otherSlider").slick({   
+	$(".otherSlider").slick({   
 		prevArrow: $('.prevWebDev'),
         nextArrow: $('.nextWebDev'),
         fade:true

@@ -20,6 +20,9 @@
 
 	.nextBorder{
 		border-color: $lightGray;
+		&:hover{
+			border-color: $mediumGray;
+		}
 	}
 
 
