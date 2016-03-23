@@ -1349,7 +1349,7 @@ IE 10+, Safari 5 */ }
     top: 400px;
     left: 1260px; }
     .paradowskiText h1 {
-      font-size: 50px;
+      font-size: 45px;
       margin-bottom: 15px;
       margin-top: 30px; }
 
@@ -1418,7 +1418,71 @@ IE 10+, Safari 5 */ }
       color: #414042; }
 
   .expColor {
-    background-color: yellow !important; } }
+    background-color: yellow !important; }
+
+  .sputnik {
+    position: absolute;
+    top: 100px;
+    left: 677px;
+    max-width: 24px;
+    z-index: 100;
+    color: lightGray; }
+    .sputnik h2 {
+      font-size: 25px; }
+    .sputnik .freelanceText {
+      position: absolute;
+      top: 31px;
+      left: -21px; }
+
+  .invertedModal {
+    width: 100vw;
+    height: 100vh;
+    background: #414042;
+    position: fixed;
+    z-index: 10000000;
+    display: none;
+    padding-top: 6vh;
+    top: 0px;
+    left: 0px; }
+    .invertedModal .sliderControls {
+      margin-top: 20px;
+      font-size: 60px;
+      color: #F1F2F2; }
+      .invertedModal .sliderControls div {
+        padding: 0px 20px;
+        cursor: pointer;
+        display: inline-block; }
+        .invertedModal .sliderControls div:hover {
+          color: #bcbec0; }
+    .invertedModal .slick-slide {
+      height: 600px; }
+    .invertedModal .exitIcon {
+      font-size: 3em;
+      position: fixed;
+      top: 8vh;
+      right: 10vw;
+      color: #F1F2F2;
+      cursor: pointer; }
+      .invertedModal .exitIcon:hover {
+        color: #bcbec0; }
+    .invertedModal .menu {
+      margin: 0;
+      margin-bottom: 40px; }
+      .invertedModal .menu li {
+        color: #F1F2F2;
+        list-style: none;
+        display: inline;
+        font-family: "Quicksand", Helvetica, Sans-Serif;
+        font-size: 20px;
+        padding: 0 20px;
+        cursor: pointer; }
+        .invertedModal .menu li:first-child {
+          padding: 20px 0 0 0; }
+        .invertedModal .menu li:hover {
+          font-weight: bolder; }
+      .invertedModal .menu .active {
+        color: #F1F2F2;
+        font-weight: bolder; } }
 @media (min-width: 75em) and (max-width: 106.24em) {
   .expContainer {
     height: 100vh;
@@ -1488,7 +1552,10 @@ IE 10+, Safari 5 */ }
 
   .amcsText {
     top: 300px;
-    left: 80px; }
+    left: 80px;
+    color: lightGray; }
+    .amcsText h2 {
+      font-family: "Quicksand", Helvetica, Sans-Serif; }
     .amcsText h1 {
       font-size: 65px;
       margin-top: -12px;
@@ -1584,10 +1651,145 @@ IE 10+, Safari 5 */ }
       color: #414042; }
 
   .expColor {
-    background-color: yellow !important; } }
+    background-color: yellow !important; }
+
+  .sputnik {
+    position: absolute;
+    top: 100px;
+    left: 677px;
+    max-width: 24px;
+    z-index: 100;
+    color: lightGray; }
+    .sputnik h2 {
+      font-size: 25px; }
+    .sputnik .freelanceText {
+      position: absolute;
+      top: 31px;
+      left: -21px; }
+
+  .invertedModal {
+    width: 100vw;
+    height: 100vh;
+    background: #414042;
+    position: fixed;
+    z-index: 10000000;
+    display: none;
+    padding-top: 6vh;
+    top: 0px;
+    left: 0px; }
+    .invertedModal .sliderControls {
+      margin-top: 20px;
+      font-size: 40px;
+      color: #F1F2F2; }
+      .invertedModal .sliderControls div {
+        padding: 0px 20px;
+        cursor: pointer;
+        display: inline-block; }
+        .invertedModal .sliderControls div:hover {
+          color: #bcbec0; }
+    .invertedModal .slick-slide {
+      height: 300px; }
+    .invertedModal .exitIcon {
+      font-size: 26px;
+      position: fixed;
+      top: 8vh;
+      right: 10vw;
+      color: #F1F2F2;
+      cursor: pointer; }
+      .invertedModal .exitIcon:hover {
+        color: #bcbec0; }
+    .invertedModal .menu {
+      margin: 0;
+      margin-bottom: 40px; }
+      .invertedModal .menu li {
+        list-style: none;
+        display: inline;
+        font-family: "Quicksand", Helvetica, Sans-Serif;
+        font-size: 18px;
+        padding: 0 20px;
+        color: #F1F2F2;
+        cursor: pointer; }
+        .invertedModal .menu li:first-child {
+          padding: 20px 0 0 0; }
+        .invertedModal .menu li:hover {
+          font-weight: bolder; }
+      .invertedModal .menu .active {
+        color: #F1F2F2;
+        font-weight: bolder; } }
 .about {
   background-color: #F1F2F2;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 10;
+  position: relative;
+  display: block; }
+
+.aboutSpace {
+  background: url("../img/sci4.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.5); }
+
+.aboutMovies {
+  background: url("../img/casa.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.5); }
+
+.aboutSciFic {
+  background: url("../img/Sci2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.5); }
+
+.aboutBoardGames {
+  background: url("../img/board.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.5); }
+
+.aboutElectronics {
+  background: url("../img/electronics.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.5); }
+
+.aboutSlide {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Quicksand", Helvetica, Sans-Serif; }
+  .aboutSlide h1 {
+    color: white;
+    margin-top: 100px;
+    font-family: "Quicksand", Helvetica, Sans-Serif; }
+  .aboutSlide p {
+    line-height: 1;
+    color: white;
+    text-align: justify; }
+
+.sliderControls {
+  margin-top: 300px;
+  font-size: 60px;
+  color: white;
+  z-index: 100000000;
+  position: absolute;
+  top: 100px;
+  left: 234px; }
+  .sliderControls div {
+    padding: 0px 20px;
+    cursor: pointer;
+    display: inline-block; }
+    .sliderControls div:hover {
+      color: #414042; }
 
 .contact {
   background-color: #6d6e71;

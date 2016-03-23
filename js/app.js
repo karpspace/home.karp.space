@@ -9,29 +9,6 @@ var orbitCheck = 0;
 		console.log(currentSlide);
 	}  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function menuClick(page){
 	
 	$("nav").fadeIn();
@@ -42,7 +19,7 @@ function menuClick(page){
 		pIndex = page.index("li");
 	}
 
-	if ((page.attr("data-page") == "exp") || (page.attr("data-page") == "contact"))  {
+	if ((page.attr("data-page") == "exp") || (page.attr("data-page") == "contact")|| (page.attr("data-page") == "about"))  {
 		$("nav li").addClass("light", 1500, "linear");
 		$("nav li").removeClass("dark blue activeLight activeBlue activeDark", 1500, "linear");
 		page.addClass("activeLight");
@@ -50,7 +27,9 @@ function menuClick(page){
 		$("nav li").addClass("blue", 1500, "linear");
 		$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
 		page.addClass("activeBlue");
-	}else{
+	}
+
+	else{
 		$("nav li").addClass("dark", 1500, "linear");
 		$("nav li").removeClass("blue light activeLight activeBlue activeDark", 1500, "linear");
 		page.addClass("activeDark");
@@ -78,6 +57,16 @@ $(document).ready(function(){
 		$("." + $(this).attr("data-orbitName") + "Object").addClass("expColor");
 
 	})
+
+	//$(".aboutSlider").slick();
+
+	$(".aboutSlider").slick({   
+		prevArrow: $('.prevAbout'),
+        nextArrow: $('.nextAbout'),
+        fade:true
+    });
+
+
 
 
 	$(".webdevLinkModal").click(function(){
@@ -280,7 +269,7 @@ $(document).ready(function(){
 		
 	});
 
-		$(".frontendSlider").slick({   
+	$(".frontendSlider").slick({   
 		prevArrow: $('.prevWebDev'),
         nextArrow: $('.nextWebDev'),
         fade:true
@@ -295,7 +284,7 @@ $(document).ready(function(){
 
 	$(".frontendList li").click(function(){
 		$(".frontendSlider").slick("slickGoTo", $(this).index());   
-	}); 
+		}); 
 
 	//Other Modal
 		$(".other").click(function(){
@@ -321,6 +310,38 @@ $(document).ready(function(){
 		$(".otherSlider").slick("slickGoTo", $(this).index());   
 	}); 
 
+	
+
+
+	
+
+
+
+
+
+
+	$(".moreInfoButton").click(function(){
+		
+		$('#expModal').fadeIn();
+		
+	});
+
+		$(".expSlider").slick({   
+		prevArrow: $('.prevWebDev'),
+        nextArrow: $('.nextWebDev'),
+        fade:true
+    });
+
+
+    $('.expSlider').on('afterChange', function(event, slick, direction){
+  		checkSlide("exp");
+  		console.log("test");
+	});
+	
+
+	$(".expList li").click(function(){
+		$(".expSlider").slick("slickGoTo", $(this).index());   
+	}); 
 
 
 
@@ -344,5 +365,6 @@ $(document).ready(function(){
 
 	$(".exitIcon").click(function(){
 		$(".webdevModal").fadeOut();
+		$(".invertedModal").fadeOut();
 	});
 });

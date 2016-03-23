@@ -104,7 +104,7 @@
 		top:400px;
 		left: 1260px;
 		h1{
-			font-size: 50px;
+			font-size: 45px;
 			margin-bottom: 15px;
 			margin-top: 30px;
 		}
@@ -185,4 +185,104 @@
 	 .expColor{
 	 	background-color: yellow !important;
 	 }
+
+
+	 .sputnik{
+	 	position: absolute;
+    	top: 100px;
+    	left: 677px;
+    	max-width: 24px;
+    	z-index: 100;
+    	color:lightGray;
+    	h2{
+    		font-size: 25px;
+    	}
+
+    	.freelanceText{
+    		position: absolute;
+    		top: 31px;
+    		left: -21px;
+    	}
+	 }
+
+
+	 .invertedModal{
+        width: 100vw;
+        height: 100vh;
+        background: $darkGray;
+        position: fixed; 
+        z-index: 10000000;
+        display: none;
+        padding-top:6vh;
+        top: 0px;
+        left: 0px;
+        
+
+        .sliderControls{
+            margin-top: 20px;
+            font-size: 60px;
+            color: $lightGray;
+            div{
+                padding: 0px 20px;
+                cursor: pointer;
+                display: inline-block;
+                &:hover{
+                    color: $mediumGray;
+                }
+
+             }
+        }
+
+        .slick-slide{
+            height: 600px;
+        }
+        
+        .exitIcon{
+            font-size: 3em;
+            position: fixed;
+            top:8vh;
+            right:10vw;
+            color: $lightGray;
+            cursor: pointer;
+            &:hover{
+                color: $mediumGray;
+            }
+        }
+
+        .menu{
+            margin: 0;
+            margin-bottom: 40px;
+
+            li{
+            	color: $lightGray;
+                list-style: none;
+                display: inline;
+                font-family: $quicksand;
+                font-size: 20px;
+                padding: 0 20px;
+                cursor: pointer;
+                &:first-child{
+                    padding: 20px 0 0 0;
+                }
+                &:hover{
+                    font-weight: bolder;
+
+                }
+
+
+            }
+
+            .active{
+                    //text-decoration: underline;
+                    color: $lightGray;
+                    font-weight: bolder;
+                }
+                
+        }
+    }
+
+
+
+
+
 }
