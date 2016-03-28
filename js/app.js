@@ -211,7 +211,18 @@ $(document).ready(function(){
 
 	//Webdev View
 ///
-	
+
+	$(".php").click(function(){
+		
+		$('#phpModal').fadeIn();
+		$(".phpSlider").slick({   
+			prevArrow: $('.prevWebDev'),
+	        nextArrow: $('.nextWebDev'),
+	        fade:true
+    	});
+		
+	});
+
 	
 
 
@@ -227,11 +238,7 @@ $(".php").click(function(){
 		
 	
 
-	$(".phpSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
-        fade:true
-    });
+	
 
 
     $('.phpSlider').on('afterChange', function(event, slick, direction){
@@ -248,10 +255,14 @@ $(".php").click(function(){
   //Python Modal
 
 	$(".python").click(function(){
-		
 		$('#pythonModal').fadeIn();
-		
+		$(".pythonSlider").slick({   
+			prevArrow: $('.prevWebDev'),
+	        nextArrow: $('.nextWebDev'),
+	        fade:true
+    	});
 	});
+
 
 		$(".pythonSlider").slick({   
 		prevArrow: $('.prevPython'),
@@ -272,17 +283,22 @@ $(".php").click(function(){
 	});
 
 	//Frontend Modal
-		$(".frontend").click(function(){
-		
-		$('#frontendModal').fadeIn();
-		
-	});
+		$(".frontend").click(function(){	
+			$('#frontendModal').fadeIn();
+			$(".frontendSlider").slick({   
+				prevArrow: $('.prevWebDev'),
+        		nextArrow: $('.nextWebDev'),
+        		fade:true
+    		});		
+		});
+
 
 	$(".frontendSlider").slick({   
 		prevArrow: $('.prevFront'),
         nextArrow: $('.nextFront'),
         fade:true
     });
+
 
 
     $('.frontendSlider').on('afterChange', function(event, slick, direction){
@@ -296,15 +312,23 @@ $(".php").click(function(){
 		}); 
 
 	//Other Modal
-		$(".other").click(function(){
-		
+	$(".other").click(function(){
 		$('#otherModal').fadeIn();
-		
+		$(".otherSlider").slick({   
+			prevArrow: $('.prevWebDev'),
+	        nextArrow: $('.nextWebDev'),
+	        fade:true
+	    });	
 	});
 
 		$(".otherSlider").slick({   
 		prevArrow: $('.prevOther'),
         nextArrow: $('.nextOther'),
+		});
+	$(".otherSlider").slick({   
+		prevArrow: $('.prevWebDev'),
+        nextArrow: $('.nextWebDev'),
+
         fade:true
     });
 

@@ -328,12 +328,22 @@
              }
         }
 
+
         .slick-slide{
             height: 500px;
         }
         .slick-slider{
             margin-top:100px;
         }
+
+        .slick-slider{
+            height: 600px;
+        }
+        
+        .slick-slide{
+            height: 600px; 
+        }
+
         .exitIcon{
             font-size: 2em;
             position: fixed;

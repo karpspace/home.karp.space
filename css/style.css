@@ -125,6 +125,8 @@ body {
     background-color: #404042; }
   .start .nextBorder {
     border-color: #F1F2F2; }
+    .start .nextBorder:hover {
+      border-color: #bcbec0; }
   .start .webdevLink {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -144,6 +146,15 @@ body {
     margin-left: 10px;
     text-transform: uppercase;
     letter-spacing: 10px; }
+  .start .nextBorder {
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 54px;
+    cursor: pointer; }
+    .start .nextBorder:hover {
+      color: #bcbec0; }
 
 .webdev {
   background-color: #F1F2F2;
@@ -401,6 +412,10 @@ IE 10+, Safari 5 */ }
       height: 500px; }
     .webdevModal .slick-slider {
       margin-top: 100px; }
+    .webdevModal .slick-slider {
+      height: 600px; }
+    .webdevModal .slick-slide {
+      height: 600px; }
     .webdevModal .exitIcon {
       font-size: 2em;
       position: fixed;

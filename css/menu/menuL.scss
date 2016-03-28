@@ -1,6 +1,7 @@
 	@include mq($from: "wide") {
 	nav{
 		display: none;
+		//display: none; 
 		width:300px;
 		//background-color: red;
 		position: fixed;
