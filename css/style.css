@@ -31,7 +31,7 @@ body {
     nav ul {
       width: 280px;
       margin: 0 auto;
-      text-align: center; }
+      text-align: right; }
       nav ul li {
         list-style: none;
         font-family: "Quicksand", Helvetica, Sans-Serif;
@@ -77,7 +77,7 @@ body {
     nav ul {
       width: 280px;
       margin: 0 auto;
-      text-align: center; }
+      text-align: right; }
       nav ul li {
         list-style: none;
         font-family: "Quicksand", Helvetica, Sans-Serif;
@@ -135,7 +135,7 @@ body {
       color: #bcbec0;
       border-color: #bcbec0; }
   .start .nameStart {
-    margin-top: 50vh; }
+    margin-top: 56vh; }
   .start h1 {
     font-weight: 100;
     font-size: 80px; }
@@ -205,13 +205,13 @@ body {
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
     top: 430px;
-    -webkit-animation: phpOrbit 800s linear infinite;
+    -webkit-animation: phpOrbit 200s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: phpOrbit 800s linear infinite;
+    -moz-animation: phpOrbit 200s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: phpOrbit 800s linear infinite;
+    -o-animation: phpOrbit 200s linear infinite;
     /* Opera 12+ */
-    animation: phpOrbit 800s linear infinite;
+    animation: phpOrbit 200s linear infinite;
     /* Chrome, Firefox 16+,                                                       IE 10+, Safari 5 */ }
 
   .phpOrbit {
@@ -231,13 +231,13 @@ body {
     top: 440px;
     background-color: #F1F2F2;
     font-size: 20px;
-    -webkit-animation: pythonOrbit 800s linear infinite;
+    -webkit-animation: pythonOrbit 200s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: pythonOrbit 800s linear infinite;
+    -moz-animation: pythonOrbit 200s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: pythonOrbit 800s linear infinite;
+    -o-animation: pythonOrbit 200s linear infinite;
     /* Opera 12+ */
-    animation: pythonOrbit 800s linear infinite;
+    animation: pythonOrbit 200s linear infinite;
           /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -258,13 +258,13 @@ IE 10+, Safari 5 */ }
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
     top: 430px;
-    -webkit-animation: frontendOrbit 800s linear infinite;
+    -webkit-animation: frontendOrbit 200s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: frontendOrbit 800s linear infinite;
+    -moz-animation: frontendOrbit 200s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: frontendOrbit 800s linear infinite;
+    -o-animation: frontendOrbit 200s linear infinite;
     /* Opera 12+ */
-    animation: frontendOrbit 800s linear infinite;
+    animation: frontendOrbit 200s linear infinite;
               /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
@@ -285,13 +285,13 @@ IE 10+, Safari 5 */ }
     font-family: "Quicksand", Helvetica, Sans-Serif;
     text-transform: uppercase;
     top: 423px;
-    -webkit-animation: otherOrbit 800s linear infinite;
+    -webkit-animation: otherOrbit 200s linear infinite;
     /* Chrome, Safari 5 */
-    -moz-animation: otherOrbit 800s linear infinite;
+    -moz-animation: otherOrbit 200s linear infinite;
     /* Firefox 5-15 */
-    -o-animation: otherOrbit 800s linear infinite;
+    -o-animation: otherOrbit 200s linear infinite;
     /* Opera 12+ */
-    animation: otherOrbit 800s linear infinite;
+    animation: otherOrbit 200s linear infinite;
         /* Chrome, Firefox 16+, 
 IE 10+, Safari 5 */ }
 
