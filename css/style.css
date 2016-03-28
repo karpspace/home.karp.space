@@ -1768,7 +1768,7 @@ IE 10+, Safari 5 */ }
     background-size: cover;
     box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.7); }
   .about .aboutSciFic {
-    background: url("../img/Sci2-min.jpg") no-repeat center center;
+    background: url("../img/sci2-min.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
