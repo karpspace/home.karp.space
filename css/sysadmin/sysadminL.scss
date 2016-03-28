@@ -15,10 +15,12 @@
 		z-index: 100;
 		&:hover{
 			background-color: $blue;
-		border:5px solid $lightGray
+			border:5px solid $lightGray
 		}
 	}
 
+
+	
 	.line{
 		background-color: $lightGray;
 	}
@@ -32,7 +34,7 @@
 	}
 	.frame{
 		font-family: $quicksand;
-	    font-size: 12px;
+	    font-size: 18px;
 	    color: white;
 	    width: 80%;
 	    padding: 20px;

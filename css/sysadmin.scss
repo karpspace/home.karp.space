@@ -32,5 +32,11 @@
 }
 
 
+.circleInvert{
+		background-color: $blue !important;
+		border:5px solid $lightGray !important;
+	}
+
+
 @import "sysadmin/sysadminL";
 @import "sysadmin/sysadminM";

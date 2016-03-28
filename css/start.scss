@@ -15,13 +15,23 @@
 
 
 	.nameStart{
-		background-color: $darkGray;
+		background-color: #404042 //$darkGray;
 	}
 
 	.nextBorder{
 		border-color: $lightGray;
 	}
 
+
+	.webdevLink{
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+		&:hover{
+			color: $mediumGray ;
+			border-color: $mediumGray;
+		}
+	}
 
 
 @import 'start/startLo';

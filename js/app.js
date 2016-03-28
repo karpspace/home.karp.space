@@ -6,7 +6,7 @@ var orbitCheck = 0;
 		currentSlide = $("."+type+"Slider").slick("slickCurrentSlide");
 		$("."+type+"List li").removeClass("active");
 		$("."+type+"List li:nth-child("+(currentSlide+1)+")").addClass("active");
-		console.log(currentSlide);
+		//console.log(currentSlide);
 	}  
 
 function menuClick(page){
@@ -49,10 +49,18 @@ function menuClick(page){
 $(document).foundation();
 $(document).ready(function(){	
 
+
+
+	
+    var scroll = $(window).scrollTop();
+    if (scroll > 100){
+    	$("nav").fadeIn();
+    }
+
  
 
 	$(".expOrbit").hover(function(){
-		console.log($(this).attr("data-orbitName"));
+		//console.log($(this).attr("data-orbitName"));
 		$(".expObject").removeClass("expColor");
 		$("." + $(this).attr("data-orbitName") + "Object").addClass("expColor");
 
@@ -75,6 +83,9 @@ $(document).ready(function(){
 
 	$(".exitIcon").click(function(){
 		$("nav").fadeIn();
+		$(".webdevModal").fadeOut();
+		$(".invertedModal").fadeOut();
+		//$('.sliders').slick('unslick');
 	});
 
 
@@ -86,7 +97,7 @@ $(document).ready(function(){
 			onAfter:function(){
 			 	requestAnimationFrame(function() {
 			 	
-			 		if ((link.attr("data-page") == "webdev") && (1)){
+			 	/*	if ((link.attr("data-page") == "webdev") && (1)){
 			 			orbitCheck = 1;
 			 			setTimeout(function(){
 			 				$(".php").mouseenter();
@@ -107,7 +118,7 @@ $(document).ready(function(){
 				 				},500)
 				 			},500)
 			 			},100)
-			 		}
+			 		} */
 
 			 	});
 			 } 
@@ -115,7 +126,7 @@ $(document).ready(function(){
 		 menuClick(link);
 		
 	});
-
+	
 
 
 	//Menu Script
@@ -132,7 +143,7 @@ $(document).ready(function(){
 		y = $(this).css("top");
 		x = $(this).css("left");
 		frame = $(this).attr("data-sysAdminInfo")
-		console.log(x + " " + y);
+		//console.log(x + " " + y);
 		//$(".sysadminContainer").append("<div >");
 
 
@@ -142,71 +153,65 @@ $(document).ready(function(){
 	});
 
 	$(".circle").click(function(){
-		$(".syadminFrame").removeClass("zoomIn");
+		$(".circle").removeClass("circleInvert");
+		$(this).addClass("circleInvert");
+		$(".syadminFrame").removeClass("fadeOut");
 		frame = $(this).attr("data-sysAdminInfo");
-		console.log(frame+"t");
 		$(".syadminFrame").html("");
 		switch(frame){
 			case "cp":
-			$(".syadminFrame").html(" <h1>cp</h1><p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.<br>Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.<br>Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.<br>Qui animated corpse, cricket bat max brucks terribilem incessu zomby.</p>");
+			$(".syadminFrame").html(" <h1>cp</h1><p>I have experience with <span class='bold'>CPanel</span>, <span class='bold'>Plesk</span> and <span class='bold'>Webmin</span> control panels. My own preference is Webmin, but I feel comfortable with any of them.</p>");
 			break;
 
 			case "http":
-			$(".syadminFrame").html(" <h1>http</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve, imo evil braaiinns stalking monstra hypothalamus adventus resi hippocampus dentevil vultus brain comedat cerebella pitiutary gland viventium. Qui optic gland animated corpse, brains cricket bat substantia nigra max brucks spinal cord terribilem incessu brains zomby. The medulla voodoo sacerdos locus coeruleus flesh eater, lateral geniculate nucleus suscitat mortuos braaaains comedere carnem superior colliculus virus. Zonbi cerebellum tattered for brein solum oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>http</h1><p><span class='bold'>Apache</span> is my webserver to go. Even though it's not as fast as nginx I choose it because of it’s <span class='bold'>great community</span> and <span class='bold'>documentation</span> as well as ease of use of mods. Because of all my vhosts have dynamic content, default ability to support it was a huge advantage. I feel really comfortable around apache <span class='bold'>config file</span> and <span class='bold'>.htaccess files</span>. I had to write scripts, that would <span class='bold'>generate vhosts</span> for every directory in given folder with certain options. <br>If I had to serve lots of static websites I would definitely choose <span class='bold'>nginx</span>, though. That’s why I've installed nginx and put couple of my static vhosts on it on my private server. </p>");
 			break;
 
 			case "mysql":
-			$(".syadminFrame").html(" <h1>mysql</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorgibilem incessu brains zomby. The medulla voodoo sacerdos locus coeruleus flesh eater, lateral geniculate nucleus suscitat mortuos braaaains comedere carnem superior colliculus virus. Zonbi cerebellum tattered for brein solum oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>mysql</h1><p>MySQL server is my main load on server, as every website has CMS that uses database. I painfully learnt that having over <span class='bold'>1M entries</span>, and trying to make live web statistics is not a good idea on simple VPS. I really fast learnt that <span class='bold'>caching</span> is the key word. I use different user with random generated name and password, and <span class='bold'>close access</span> to MySQL from outside the server. Although I know how to use MySQL, I prefer using <span class='bold'>phpMyAdmin</span> </p>");
 			break;
 
 			case "ftp":
-			$(".syadminFrame").html(" <h1>ftp</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brainsruleus flesh eater, lateral geniculate nucleus suscitat mortuos braaaains comedere carnem superior colliculus virus. Zonbi cerebellum tattered for brein solum oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>ftp</h1><p>One of the older and really <span class='bold'>insecure protocol</span>. Unfortunately used till today. I use <span class='bold'>VSFTPD</span> as my main FTP service. I try to set it up as secure as possible with custom rules in <span class='bold'>Fail2Ban</span>, and <span class='bold'>custom configuration</span>. </p>");
 			break;
 
 			case "services":
-			$(".syadminFrame").html(" <h1>services</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve, imo evil braaiinns stalking monstra hypothalamus adventus resi hippocampus dentevil vultus brain comedat cerebella pitiutary gland viventium. Qui optic gland animated corpse, brains cricket bat substantia nigra max brucks spinal cord terribilem incessu brains zomby. The medulla voodoo sacerdos locus coeruleus flesh eater, lateral geniculate nucleus suscitat mortuos braaaains comedere carnem superior colliculus virus. Zonbi cerebellum tattered for brein solum oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>services</h1><p>My servers run <span class='bold'>http server(Apache)</span>, <span class='bold'>ftp(vsftpd)</span>, <span class='bold'>mail(sendmail)</span>, <span class='bold'>dns(bind)</span>, <span class='bold'>ssh</span>, <span class='bold'>mysql</span>. You can find out more about my preferred services by clicking on different stars.</p>");
 			break;
 
 			case "dns":
-			$(".syadminFrame").html(" <h1>dns</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerveerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>dns</h1><p>Bind configuration <span class='bold'>is not</span> my strongest skill. I've installed it my private server, connected my private domains and <span class='bold'>it works</span> without any problems. Unfortunately I don't have experience with large scale DNS settings, as we use one of the control panel for it. I know how set <span class='bold'>reverse dns, set <span class='bold'><span class='bold'>different DNS records</span> and <span class='bold'>transfer to proper IP</span>.</p>");
 			break;
 
 			case "email":
-			$(".syadminFrame").html(" <h1>mail</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro.ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>mail</h1><p>I don't think there is anything more <span class='bold'>evil</span> the setting email server. Even though I was able to set it up, and <span class='bold'>it's working</span> - it's road through hell. I’m <span class='bold'>still learning</span> how to manage and configure it.  </p>");
 			break;
 
-			case "http":
-			$(".syadminFrame").html(" <h1>http</h1><p>Zains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basrvivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve, imo evil braaiinns stalking itiutary gland viventium. Qui optic gland animated corpse, brains cricket bat substantia nigra max brucks spinal cord terribilem ivoodoo sacerdos locus coeruleus flesh eater, lateral geniculate nucleus suscitat mortuos braaaains comedere carnem superior collis. Zonbi cerebellum tattered for brein solum oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
-			break;
 			case "admin":
-			$(".syadminFrame").html(" <h1>administration</h1><p>Zo. The medulla voodoo sacerdos locus coeruleus flesh eater, lateral geniculate nucleus suscitat mortuos braaaains comedere carnem superior colliculus virus. Zonbi cerebellum tattered for brein solum oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>administration</h1><p>Administration is <span class='bold'>big surprise</span> to me. Before I started learning about it, I thought it’s dull and boring. Yet, as I started getting aware of how administration of a server works, it started to interest me more and more. I love controlling what happens on the server, making sure it <span class='bold'>secure</span>, and as <span class='bold'>fast</span> as possible.<br>You can find out more about my <span class='bold'>administration skills by clicking on different stars.  </p>");
 			break;
 
 			case "security":
-			$(".syadminFrame").html(" <h1>security</h1><p>Zalum cerveau cerebro. erebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi i hippocampus dentevil vultus brain comedat cerebella pitiutary gland viventium. Qui optic gland animated corpse, brains cricket bat substantia nigra maere carnem superior colliculus virus. Zonbi cerebellum tattered for brein solum oculi cerveau eorum defunctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>security</h1><p><span class='bold'>Information</span> is the key in security. That’s why I use <span class='bold'>Logwatch</span> to get <span class='bold'>daily updates</span> from my servers, informing about all the security threats. I also react to all illegal access tries with <span class='bold'>Fail2Ban</span> - using <span class='bold'>REGEX</span> to build rules is very powerful. As a standard I have <span class='bold'>root account disabled</span>, <span class='bold'>allow only specified users</span> to connect through ssh. Password, if cannot be switched to keys, are generated by <span class='bold'>KeePassX2</span>. I also install <span class='bold'>RootKit</span> hunter to track any changes made to crucial files. <span class='bold'>Backups</span> are stored in <span class='bold'>two different places</span>. One is cloud and second one is physical storage. We don't always have resources we wished to have, but we still have to <span class='bold'>have things done</span>. I’ve managed to write script, that connects and backups all crucial data to online drive with <span class='bold'>2Tb storage for 10$ a month</span>.</p>");
 			break;
 
 			case "os":
-			$(".syadminFrame").html(" <h1>os</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apolocus coeruleus flesh eater, lateral geniculate nucleus suscitat mortuos braaaains comede Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>os</h1><p>I feel comfortable with <span class='bold'>all major OS's</span>. I <span class='bold'>prefer Linux/Windows</span> over MacOS, but it's just a preference. I feel more comfortable with Linux administration than any other os, but I will do well with any medium office network administration on Windows/MacOS. For everyday use I have Windows computers with mobaXterm to connect to servers.</p>");
 			break;
 
 			case "cli":
-			$(".syadminFrame").html(" <h1>cli</h1><p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiinsl cord terribilem incessu brains zomby. The medulla voodoo sacerdos locus coeruleus flesh eatnctis cerebro go lum cerebro. Nescio brains an Undead cervello zombies. Sicut thalamus malus putrid brains voodoo horror. Nigh basal ganglia tofth eliv ingdead.</p>");
+			$(".syadminFrame").html(" <h1>cli</h1><p>Oh the commandline - I think anyone in IT who was raised on movies like <span class='bold'>Hackers</span> or <span class='bold'>Matrix</span> fell in love with the green letters pouring down the monitor. First steps were so <span class='bold'>tough but also rewarding</span>. After using it non stop for the <span class='bold'>past 4 years</span> I love it. I'm still learning and discovering how to do things better. I also believe in <span class='bold'>automation</span>, if I need to do a task, a least once a week I will try to find a way to run it on itself. At the beginning of my Linux administration journey I used <span class='bold'>bash scripting</span>(with google) a lot. It's not a language that I find as enjoyable as <span class='bold'>Python</span>. That's why, most of my scripts are written in it right now. I build scripts to <span class='bold'>create config files</span>, <span class='bold'>initialize application and it’s database</span>, <span class='bold'>look for specific file</span>s and many many others. I also finished <span class='bold'>“Bandit”</span> game on http://overthewire.org/.</p>");
 			break;
 
 		}
-		$(".syadminFrame").addClass("zoomIn");
+		$(".syadminFrame").addClass("fadeIn");
 	});
 
 
 
 	//Webdev View
 ///
-	$(".php").click(function(){
-		
-		$('#phpModal').fadeIn();
-		
-	});
+	
 	
 
 
@@ -216,7 +221,11 @@ $(document).ready(function(){
 
 
 	//PHP modal
-
+$(".php").click(function(){
+		
+		$('#phpModal').fadeIn();
+		
+	
 
 	$(".phpSlider").slick({   
 		prevArrow: $('.prevWebDev'),
@@ -229,7 +238,7 @@ $(document).ready(function(){
   		checkSlide("php");
 	});
 	
-
+});
 	$(".phpList li").click(function(){
 		$(".phpSlider").slick("slickGoTo", $(this).index());   
 	});
@@ -245,15 +254,15 @@ $(document).ready(function(){
 	});
 
 		$(".pythonSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
+		prevArrow: $('.prevPython'),
+        nextArrow: $('.nextPython'),
         fade:true
     });
 
 
     $('.pythonSlider').on('afterChange', function(event, slick, direction){
   		checkSlide("python");
-  		console.log("test");
+  		//console.log("test");
 	});
 	
 
@@ -270,15 +279,15 @@ $(document).ready(function(){
 	});
 
 	$(".frontendSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
+		prevArrow: $('.prevFront'),
+        nextArrow: $('.nextFront'),
         fade:true
     });
 
 
     $('.frontendSlider').on('afterChange', function(event, slick, direction){
   		checkSlide("python");
-  		console.log("test");
+  		//console.log("test");
 	});
 	
 
@@ -294,15 +303,15 @@ $(document).ready(function(){
 	});
 
 		$(".otherSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
+		prevArrow: $('.prevOther'),
+        nextArrow: $('.nextOther'),
         fade:true
     });
 
 
     $('.otherSlider').on('afterChange', function(event, slick, direction){
   		checkSlide("python");
-  		console.log("test");
+  		//console.log("test");
 	});
 	
 
@@ -327,15 +336,15 @@ $(document).ready(function(){
 	});
 
 		$(".expSlider").slick({   
-		prevArrow: $('.prevWebDev'),
-        nextArrow: $('.nextWebDev'),
+		prevArrow: $('.prevExp'),
+        nextArrow: $('.nextExp'),
         fade:true
     });
 
 
     $('.expSlider').on('afterChange', function(event, slick, direction){
   		checkSlide("exp");
-  		console.log("test");
+  		//console.log("test");
 	});
 	
 
@@ -363,8 +372,7 @@ $(document).ready(function(){
 		$("."+name+"Orbit").removeClass("orbitHover");
 	});
 
-	$(".exitIcon").click(function(){
-		$(".webdevModal").fadeOut();
-		$(".invertedModal").fadeOut();
-	});
+
+
+	$(".adminDot").click();
 });

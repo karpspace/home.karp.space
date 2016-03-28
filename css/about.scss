@@ -4,52 +4,53 @@
 	z-index: 10;
 	position: relative;
 	display: block;
-}
 
-.aboutSpace{
-	background: url("../img/sci4.jpg") no-repeat center center; 
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+
+  .aboutSpace{
+  	background: url("../img/sci4-min.jpg") no-repeat center center; 
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 100vw 0 rgba(0,0,0,0.7)
+  }
+
+  .aboutMovies{
+  	background: url("../img/casa-min.jpg") no-repeat center center fixed; 
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 100vw 0 rgba(0,0,0,0.7)
+  }
+
+  .aboutSciFic{
+  	background: url("../img/Sci2-min.jpg") no-repeat center center; 
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 100vw 0 rgba(0,0,0,0.7)
+  }
+  .aboutBoardGames{
+  	background: url("../img/board-min.jpg") no-repeat center center; 
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 100vw 0 rgba(0,0,0,0.7)
+  }
+
+  .aboutElectronics{
+  	background: url("../img/electronics-min.jpg") no-repeat center center; 
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     box-shadow: inset 100vw 0 rgba(0,0,0,0.5)
+  }
+
+
+  @import 'about/aboutM';
+  @import 'about/aboutL';
 }
-
-.aboutMovies{
-	background: url("../img/casa.jpg") no-repeat center center fixed; 
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-    box-shadow: inset 100vw 0 rgba(0,0,0,0.5)
-}
-
-.aboutSciFic{
-	background: url("../img/Sci2.jpg") no-repeat center center; 
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-    box-shadow: inset 100vw 0 rgba(0,0,0,0.5)
-}
-.aboutBoardGames{
-	background: url("../img/board.jpg") no-repeat center center; 
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-    box-shadow: inset 100vw 0 rgba(0,0,0,0.5)
-}
-
-.aboutElectronics{
-	background: url("../img/electronics.jpg") no-repeat center center; 
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-    box-shadow: inset 100vw 0 rgba(0,0,0,0.5)
-}
-
-
-
-@import 'about/aboutM';

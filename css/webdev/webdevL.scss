@@ -308,10 +308,13 @@
         padding-top:6vh;
         top: 0px;
         left: 0px;
+        font-family: $quicksand;
+        font-size: 20px;
+   
         
 
         .sliderControls{
-            margin-top: 20px;
+
             font-size: 60px;
             color: $mediumGray;
             div{
@@ -326,11 +329,13 @@
         }
 
         .slick-slide{
-            height: 600px;
+            height: 500px;
         }
-        
+        .slick-slider{
+            margin-top:100px;
+        }
         .exitIcon{
-            font-size: 3em;
+            font-size: 2em;
             position: fixed;
             top:8vh;
             right:10vw;

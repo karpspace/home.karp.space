@@ -19,16 +19,13 @@ $blue: #1c75bc;
 
 
 //Images
-$startBackground:url(../img/startBack.jpg);
+$startBackground:url(../img/startBack-min.jpg);
 
 
 
 //Global Styles
 
-.nextBorder{
-	border: 4px solid;
-	border-radius: 100%;
-} 
+
 
 .bold{
 	font-weight: bold;
@@ -38,6 +35,8 @@ $startBackground:url(../img/startBack.jpg);
 body{
 	overflow: hidden;
 }
+
+
 
 $mq-breakpoints: (
     mobile:  320px,
