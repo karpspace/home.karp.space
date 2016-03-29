@@ -1,9 +1,13 @@
 .contact{
 	background-color: $mediumGrayPlus;
 	height: 100vh;
+	position: relative;
+	display: block;
+	z-index: 100;
  
  
-	@import "contact/contactL"
+	@import "contact/contactL";
+	@import "contact/contactM";
 }
  
 

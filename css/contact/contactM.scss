@@ -1,6 +1,6 @@
-@include mq($from: "wide") {
+@include mq($from: "desktop", $until: "wide") {
 	h1{
-		margin-top: 300px;
+		margin-top: 200px;
 		font-family: $quicksand;
 		color:$lightGray;
 		font-size: 90px;

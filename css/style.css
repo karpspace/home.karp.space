@@ -1852,6 +1852,35 @@ IE 10+, Safari 5 */ }
 
 .contact {
   background-color: #6d6e71;
-  height: 100vh; }
+  height: 100vh;
+  position: relative;
+  display: block;
+  z-index: 100; }
+  @media (min-width: 106.25em) {
+    .contact h1 {
+      margin-top: 300px;
+      font-family: "Quicksand", Helvetica, Sans-Serif;
+      color: #F1F2F2;
+      font-size: 90px; }
+    .contact p {
+      font-family: "Raleway", Helvetica, Sans-Serif;
+      color: lightGray; }
+      .contact p a {
+        color: #414042; }
+        .contact p a:hover {
+          color: #F1F2F2; } }
+  @media (min-width: 75em) and (max-width: 106.24em) {
+    .contact h1 {
+      margin-top: 200px;
+      font-family: "Quicksand", Helvetica, Sans-Serif;
+      color: #F1F2F2;
+      font-size: 90px; }
+    .contact p {
+      font-family: "Raleway", Helvetica, Sans-Serif;
+      color: lightGray; }
+      .contact p a {
+        color: #414042; }
+        .contact p a:hover {
+          color: #F1F2F2; } }
 
 /*# sourceMappingURL=style.css.map */

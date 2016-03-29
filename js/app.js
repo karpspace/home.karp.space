@@ -12,9 +12,9 @@ var orbitCheck = 0;
 	function menuClick(page){
 		$("nav").fadeIn();
 		if ( page.attr("data-page") == "contact")  {
-			//$("nav li").addClass("blue", 1500, "linear");
-			//$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
-			//page.addClass("activeBlue");
+			$("nav li").addClass("blue", 1500, "linear");
+			$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
+			page.addClass("activeBlue");
 		}else if(page.attr("data-page") == "sysadmin") {
 			$("nav li").addClass("blue", 1500, "linear");
 			$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
@@ -326,4 +326,11 @@ $(document).ready(function(){
 
 
 	$(".adminDot").click();
+
+
+	alert("Hi, this website is still work in progress, but feel free to take a look around. You can also check the code on github! ");
+
 });
+
+
+
