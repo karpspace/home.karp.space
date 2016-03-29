@@ -12,9 +12,9 @@ var orbitCheck = 0;
 	function menuClick(page){
 		$("nav").fadeIn();
 		if ( page.attr("data-page") == "contact")  {
-			$("nav li").addClass("blue", 1500, "linear");
-			$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
-			page.addClass("activeBlue");
+			//$("nav li").addClass("blue", 1500, "linear");
+			//$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
+			//page.addClass("activeBlue");
 		}else if(page.attr("data-page") == "sysadmin") {
 			$("nav li").addClass("blue", 1500, "linear");
 			$("nav li").removeClass("light dark activeLight activeBlue activeDark", 1500, "linear");
@@ -25,13 +25,13 @@ var orbitCheck = 0;
 			page.addClass("activeDark");
 		}else if((page.attr("data-page") == "webdev")) {
 			$("nav li").addClass("light", 1500, "linear");
-			$("nav li").removeClass("dark activeLight activeBlue activeDark", 1500, "linear");
+			$("nav li").removeClass("dark activeLight activeBlue activeDark blue", 1500, "linear");
 			$("nav .webdevLink").addClass("activeDark");
 		
 		}else{
-			$("nav li").addClass("dark", 1500, "linear");
-			$("nav li").removeClass("blue light activeLight activeBlue activeDark", 1500, "linear");
-			page.addClass("activeDark");
+			//$("nav li").addClass("dark", 1500, "linear");
+			//$("nav li").removeClass("blue light activeLight activeBlue activeDark", 1500, "linear");
+			//page.addClass("activeDark");
 		}
 	}
 
