@@ -1475,6 +1475,15 @@ IE 10+, Safari 5 */ }
     padding-top: 6vh;
     top: 0px;
     left: 0px; }
+    .invertedModal h1 {
+      color: #F1F2F2;
+      font-family: "Raleway", Helvetica, Sans-Serif; }
+    .invertedModal h2 {
+      color: #F1F2F2;
+      font-family: "Raleway", Helvetica, Sans-Serif; }
+    .invertedModal p {
+      color: #F1F2F2;
+      font-size: 20px; }
     .invertedModal .sliderControls {
       margin-top: 20px;
       font-size: 60px;
@@ -1708,6 +1717,15 @@ IE 10+, Safari 5 */ }
     padding-top: 6vh;
     top: 0px;
     left: 0px; }
+    .invertedModal h1 {
+      color: #F1F2F2;
+      font-family: "Raleway", Helvetica, Sans-Serif; }
+    .invertedModal h2 {
+      color: #F1F2F2;
+      font-family: "Raleway", Helvetica, Sans-Serif; }
+    .invertedModal p {
+      color: #F1F2F2;
+      font-size: 15px; }
     .invertedModal .sliderControls {
       margin-top: 20px;
       font-size: 40px;

@@ -283,15 +283,12 @@ $(document).ready(function(){
 	$(".moreInfoButton").click(function(){
 		
 		$('#expModal').fadeIn();
-		
-	});
-
-		$(".expSlider").slick({   
-		prevArrow: $('.prevExp'),
-        nextArrow: $('.nextExp'),
-        fade:true
-    });
-
+			$(".expSlider").slick({   
+				prevArrow: $('.prevExp'),
+		        nextArrow: $('.nextExp'),
+		        fade:true
+	    	});
+		});
 
     $('.expSlider').on('afterChange', function(event, slick, direction){
   		checkSlide("exp");
@@ -328,7 +325,7 @@ $(document).ready(function(){
 	$(".adminDot").click();
 
 
-	alert("Hi, this website is still work in progress, but feel free to take a look around. You can also check the code on github! ");
+alert("Hi, this website is still work in progress, but feel free to take a look around. You can also check the code on github! ");
 
 });
 

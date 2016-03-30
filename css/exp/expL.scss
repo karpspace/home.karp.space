@@ -216,6 +216,19 @@
         padding-top:6vh;
         top: 0px;
         left: 0px;
+
+        h1{
+        	color: $lightGray;
+  			font-family: $raleway;
+        }
+        h2{
+        	color: $lightGray;
+  			font-family: $raleway;	
+        }
+        p{
+        	color:$lightGray;
+        	font-size: 20px;
+        }
         
 
         .sliderControls{
