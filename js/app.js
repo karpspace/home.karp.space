@@ -201,14 +201,15 @@ $(document).ready(function(){
 	$(".python").click(function(){
 		
 		$('#pythonModal').fadeIn();
+		$(".pythonSlider").slick({   
+			prevArrow: $('.prevPython'),
+	        nextArrow: $('.nextPython'),
+	        fade:true
+   		});
 		
 	});
 
-		$(".pythonSlider").slick({   
-		prevArrow: $('.prevPython'),
-        nextArrow: $('.nextPython'),
-        fade:true
-    });
+
 
 
     $('.pythonSlider').on('afterChange', function(event, slick, direction){

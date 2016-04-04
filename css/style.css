@@ -1779,7 +1779,7 @@ IE 10+, Safari 5 */ }
     background-size: cover;
     box-shadow: inset 100vw 0 rgba(0, 0, 0, 0.7); }
   .about .aboutMovies {
-    background: url("../img/casa-min.jpg") no-repeat center center fixed;
+    background: url("../img/casa-min.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
