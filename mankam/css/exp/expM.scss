@@ -1,0 +1,294 @@
+@include mq($from: "desktop", $until: "wide") {
+	.expContainer{
+		height: 100vh;
+		width: 1600px;
+		position: relative;
+	}
+
+	.amcsOrbit{
+		border: 2px solid $lightGray;
+		border-radius: 10000px;
+		height: 3000px;
+		width: 3000px;
+		position: absolute;
+		top:-1000px;
+		left: 50px;
+		z-index: 1;
+
+	}
+	.asusOrbit{
+		border: 2px solid $lightGray;
+		border-radius: 10000px;
+		height: 3000px;
+		width: 3000px;
+		position: absolute;
+		top:-1000px;
+		left: 340px;
+		z-index: 1;
+	}
+	.hatorOrbit{
+		border: 2px solid $lightGray;
+		border-radius: 10000px;
+		height: 3000px;
+		width: 3000px;
+		position: absolute;
+		top:-1000px;
+		left: 600px;
+		z-index: 1;
+	}
+	.paradowskiOrbit{
+		border: 2px solid $lightGray;
+		border-radius: 10000px;
+		height: 3000px;
+		width: 3000px;
+		position: absolute;
+		top:-1000px;
+		left: 820px;
+		z-index: 1;
+
+	}
+
+	.freelanceOrbit{
+		border: 2px dashed $lightGray;
+		border-radius: 10000px;
+		height: 5000px;
+		width: 5000px;
+		position: absolute;
+		top: 78px;
+		left: -1440px;
+		z-index: 1;
+		pointer-events:none;
+	}
+
+	.amcsObject{
+		@include dot(50px,180px,60px);
+		background-color: $lightGray;
+		border-radius: 300px;
+		z-index:1000;
+	}
+
+	.amcsText{
+		top:300px;
+		left: 80px;
+		color:lightGray;
+		
+		h2{
+			font-family: $quicksand;	
+		}	
+		h1{
+			font-size: 65px;
+			margin-top: -12px;
+			margin-bottom: 22px;
+		}
+
+
+	}
+
+	.asusText{
+		top:300px;
+		left: 380px;
+		h1{
+			font-size: 50px;
+			margin-top: 8px;
+			margin-bottom: 22px;
+		}
+
+	}
+
+
+
+	.hatorText{
+		top:300px;
+		left: 635px;
+		h1{
+			font-size: 35px;
+			margin-bottom: 25px;
+			margin-top: 26px;
+		}
+
+	} 
+
+	.paradowskiText{
+		top:300px;
+		left: 860px;
+		h1{
+			font-size: 20px; 
+			margin-bottom: 25px;
+			margin-top: 47px;
+		}
+
+	}
+
+
+	.asusObject{
+		@include dot(375px,46px,55px);
+		background-color: $lightGray;
+		border-radius: 300px;
+		z-index:1000;
+	}
+
+	.hatorObject{
+		@include dot(585px,506px,35px);
+		background-color: $lightGray;
+		border-radius: 300px;
+		z-index:1000;
+	}
+
+	.paradowskiObject{
+		@include dot(815px,276px,40px);
+		background-color: $lightGray;
+		border-radius: 300px;
+		z-index:1000;
+	}
+
+
+
+	.expText{
+		z-index: 1000;
+		font-family: $quicksand;
+		position: absolute;
+		color:lightGray;
+		h1,h2{
+			font-family: $quicksand;
+		}
+		p{
+			margin-top: -10px;
+		}
+
+		h2{
+			margin-top: -40px;
+			font-size: 25px;
+		}
+		h1{
+			text-transform: uppercase;
+		}
+		p{
+			border-top: 2px solid $lightGray;
+			padding: 5px 0px;
+			font-size: 15px;
+		}
+		span{
+			font-size: 15px;
+			display: block;
+		}
+
+
+	}
+
+
+	 .moreInfoButton{
+	 	z-index: 1000;
+	 	cursor: pointer;
+	 	width: 145px;
+	 	text-align: center;
+	 	font-family: $quicksand;
+	 	border: 1px solid $lightGray; 
+	 	padding: 5px;
+	 	font-size: 10px;
+	 	&:hover{
+	 		background-color: $lightGray;
+	 		color:$darkGray;	
+	 	}
+	 }
+
+	 .expColor{
+	 	background-color: yellow !important;
+	 }
+
+
+	 .sputnik{
+	 	position: absolute;
+    	top: 100px;
+    	left: 677px;
+    	max-width: 24px;
+    	z-index: 100;
+    	color:lightGray;
+    	h2{
+    		font-size: 25px;
+    	}
+
+    	.freelanceText{
+    		position: absolute;
+    		top: 31px;
+    		left: -21px;
+    	}
+	 }
+
+
+
+        .invertedModal{
+        width: 100vw;
+        height: 100vh;
+        background: $darkGray;
+        position: fixed; 
+        z-index: 10000000;
+        display: none;
+        padding-top:6vh;
+        top: 0px;
+        left: 0px;
+        
+
+        .sliderControls{
+            margin-top: 20px;
+            font-size: 40px;
+            color: $lightGray;
+            div{
+                padding: 0px 14px;
+                cursor: pointer;
+                display: inline-block;
+                &:hover{
+                    color: $mediumGray;
+                }
+
+             }
+        }
+
+        .slick-slide{
+            height: 300px;
+        }
+        
+        .exitIcon{
+            font-size: 26px;
+            position: fixed;
+            top:8vh;
+            right:10vw;
+            color: $lightGray;
+            cursor: pointer;
+            &:hover{
+                color: $mediumGray;
+            }
+        }
+
+        .menu{
+            margin: 0;
+            margin-bottom: 40px;
+
+            li{
+                list-style: none;
+                display: inline;
+                font-family: $quicksand;
+                font-size: 18px;
+                padding: 0 20px;
+               color: $lightGray;
+                cursor: pointer;
+                &:first-child{
+                    padding: 20px 0 0 0;
+                }
+                &:hover{
+                    font-weight: bolder;
+
+                }
+
+
+            }
+
+            .active{
+                    //text-decoration: underline;
+                    color: $lightGray;
+                    font-weight: bolder;
+                }
+                
+        }
+    }
+
+}

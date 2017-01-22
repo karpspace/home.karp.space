@@ -1,0 +1,47 @@
+.start{
+	background: $startBackground no-repeat center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 100vh;
+	
+	h1,h2{
+		color:$lightGray;
+		font-family: $mainFont;
+		
+	}
+
+
+
+	.nameStart{
+		background-color: #404042 //$darkGray;
+	}
+
+	.nextBorder{
+		border-color: $lightGray;
+		&:hover{
+			border-color: $mediumGray;
+		}
+	}
+
+
+	.webdevLink{
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		cursor: pointer;
+		&:hover{
+			color: $mediumGray ;
+			border-color: $mediumGray;
+		}
+	}
+
+
+@import 'start/startLo';
+@import 'start/startM';
+@import 'start/startL';
+@import 'start/startXL';
+
+} 
+
+

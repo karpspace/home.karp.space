@@ -1,0 +1,76 @@
+	@include mq($from: "wide") {
+	nav{
+		display: none;
+<<<<<<< HEAD
+=======
+		//display: none; 
+>>>>>>> 42edddbea7ba25a264460f4368fcfaa7c0795ae8
+		width:300px;
+		//background-color: red;
+		position: fixed;
+		right:10px;
+		top:350px;
+		z-index: 1000;
+		ul{
+			width: 280px;
+			margin: 0 auto;
+			text-align: center;
+			li{			
+				list-style: none;
+				font-family: $quicksand;
+				font-size: 30px;
+				cursor: pointer;
+				
+
+
+		-webkit-transition: color 1.5s ease, font-size 1.5s ease;
+		-moz-transition: color 1.5s ease, font-size 1.5s ease;
+		-o-transition: color 1.5s ease, font-size 1.5s ease;
+		transition: color 1.5s ease, font-size 1.5s ease;	
+			}
+
+			.activeBlue{
+				color:$darkGray;
+				font-weight: bold;
+			}
+
+			.activeDark{
+				color:$blue;
+				font-weight: bold;
+			}
+
+			.activeLight{
+				color:$lightGray;
+				font-weight: bold;
+			}
+
+
+			//.aroundActive{
+			//	font-size: 30px;
+			//}
+		}
+	}
+
+
+	.dark{	color:$darkGray;
+		&:hover{
+				font-weight: bold;
+		}
+		
+	}
+	.light{
+
+	color:$mediumGrayPlus;
+		&:hover{
+				font-weight: bold;
+		}
+	}
+
+	.blue{
+		color:$lightGray;
+		&:hover{
+				font-weight: bold;
+		}
+
+	}
+}
